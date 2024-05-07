@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "LESewiQGVmKCVwGuZ23tf7bCD8wmoIne3sBGKtI0QtI=",
+  "Source": "DormSearchBe.Api",
+  "BasePath": "_content/DormSearchBe.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
