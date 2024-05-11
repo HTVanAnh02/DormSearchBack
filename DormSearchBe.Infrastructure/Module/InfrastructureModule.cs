@@ -14,13 +14,11 @@ namespace DormSearchBe.Infrastructure.Module
             services.AddSingleton<IAuthorizationHandler, ApprovalAuthorizationHandler>();
             services.AddSingleton<IAuthorizationPolicyProvider, ApprovalAuthorizationPolicyProvider>();
             services.AddScoped<IPermissionRepository, PermissionRepository>();
-            services.AddScoped<IAcreageRepository, AcreageRepository>();
             services.AddScoped<IAreasRepository, AreasRepository>();
             services.AddScoped<ICityRepository, CityRepository>();
             services.AddScoped<IFavoritesRepository, FavoritesRepository>();
             services.AddScoped<IHousesRepository, HousesRepository>();
             services.AddScoped<IMessagesRepository, MessagesRepository>();
-            services.AddScoped<IPricesRepository,PricesRepository>();
             services.AddScoped<IRatingsRepository,RatingsRepository>();
             services.AddScoped<IRefreshTokenRepository,RefreshTokenRepository>();
             services.AddScoped<IRoleRepository, RoleRepository>();

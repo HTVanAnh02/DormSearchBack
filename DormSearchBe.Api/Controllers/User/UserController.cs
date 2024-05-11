@@ -35,7 +35,7 @@ namespace DormSearchBe.Api.Controllers.User
         {
             return Ok(_userService.Update(dto));
         }
-        [HttpPost("DoiMatKhau")]
+        /*[HttpPost("DoiMatKhau")]
         public IActionResult DoiMatKhau(DoiMatKhau model)
         {
             var acoount = _userService.GetAll().Where(x => x.Email.Equals(model.Email)).FirstOrDefault();
@@ -52,7 +52,7 @@ namespace DormSearchBe.Api.Controllers.User
             {
                 return BadRequest();
             }
-        }
+        }*/
         private readonly string hash = @"foxle@rn";
         private string maHoaMatKhau(string text)
         {

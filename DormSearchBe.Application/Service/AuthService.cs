@@ -52,7 +52,7 @@ namespace DormSearchBe.Application.Service
             }
             else
             {
-                var roles = _roleRepository.GetAllData().Where(x => x.RoleId == user.RoleId);
+                var roles = _roleRepository.GetAllData().Where(x => x.Equals(Guid.Parse(user.Role)));
                 List<string> roleNames = new List<string>();
                 foreach (var role in roles)
                 {

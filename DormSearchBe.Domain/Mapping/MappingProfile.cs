@@ -1,13 +1,10 @@
 ﻿using AutoMapper;
-using DormSearchBe.Domain.Dto.Acreage;
 using DormSearchBe.Domain.Dto.Areas;
 using DormSearchBe.Domain.Dto.Auth;
 using DormSearchBe.Domain.Dto.City;
 using DormSearchBe.Domain.Dto.Favorites;
 using DormSearchBe.Domain.Dto.Houses;
 using DormSearchBe.Domain.Dto.Messages;
-using DormSearchBe.Domain.Dto.Permission;
-using DormSearchBe.Domain.Dto.Prices;
 using DormSearchBe.Domain.Dto.Ratings;
 using DormSearchBe.Domain.Dto.Role;
 using DormSearchBe.Domain.Dto.Roomstyle;
@@ -20,11 +17,7 @@ namespace DormSearchBe.Domain.Mapping
     {
         public MappingProfile()
         {
-            CreateMap<Permission, PermissionDto>().ReverseMap();
-            CreateMap<Permission, PermissionQuery>().ReverseMap();
 
-            CreateMap<Acreage, AcreageDto>().ReverseMap();
-            CreateMap<Acreage, AcreageQuery>().ReverseMap();
 
             CreateMap<Areas, AreasDto>().ReverseMap();
             CreateMap<Areas, AreasQuery>().ReverseMap();
@@ -38,9 +31,6 @@ namespace DormSearchBe.Domain.Mapping
             CreateMap<Houses, HousesQuery>().ReverseMap();
 
             CreateMap<Message, MessageDto>().ReverseMap();
-
-            CreateMap<Prices, PricesDto>().ReverseMap();
-            CreateMap<Prices, PricesQuery>().ReverseMap();
 
             CreateMap<Ratings, RatingsChangeFeedback>().ReverseMap();
             CreateMap<Ratings, RatingsChangeStatus>().ReverseMap();

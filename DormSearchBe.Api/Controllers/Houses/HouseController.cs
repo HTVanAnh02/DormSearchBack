@@ -3,6 +3,7 @@ using DormSearchBe.Application.IService;
 using DormSearchBe.Domain.Dto.Houses;
 using DormSearchBe.Infrastructure.Exceptions;
 using DormSearchBe.Infrastructure.Settings;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 
@@ -10,6 +11,7 @@ namespace DormSearchBe.Api.Controllers.Houses
 {
     [Route("api/[controller]")]
     [ApiController]
+    /*[Authorize]*/
     public class HousesController : ControllerBase
     {
         private readonly IHousesService _houseService;
@@ -40,7 +42,7 @@ namespace DormSearchBe.Api.Controllers.Houses
             var checkId = _usersService.ItemsList().Data.Where(x => x.UserId == Guid.Parse(objId)).FirstOrDefault();
             if (checkId == null)
             {
-                throw new ApiException(HttpStatusCode.ITEM_NOT_FOUND, "Không tìm thấy thông tin nhà tuyển dụng");
+                throw new ApiException(HttpStatusCode.ITEM_NOT_FOUND, "Không tìm thấy thông tin người dùng");
             }
 
             dto.UserId = checkId.UserId;

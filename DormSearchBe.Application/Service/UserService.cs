@@ -4,6 +4,7 @@ using DormSearchBe.Application.Helpers;
 using DormSearchBe.Application.IService;
 using DormSearchBe.Application.Wrappers.Concrete;
 using DormSearchBe.Domain.Dto.Auth;
+using DormSearchBe.Domain.Dto.City;
 using DormSearchBe.Domain.Dto.Role;
 using DormSearchBe.Domain.Dto.User;
 using DormSearchBe.Domain.Entity;
@@ -47,16 +48,34 @@ namespace DormSearchBe.Application.Service
             _jwtSettings = jwtSettings.Value;
             _refeshtokenRepository = refeshtokenRepository;
         }
+        public DataResponse<List<UserDto>> ItemsList()
+        {
+            var query = _userRepository.GetAllData();
+            if (query != null && query.Any())
+            {
+                var cityDtos = _mapper.Map<List<UserDto>>(query);
+                return new DataResponse<List<UserDto>>(_mapper.Map<List<UserDto>>(query), HttpStatusCode.OK, HttpStatusMessages.OK);
+            }
+            throw new ApiException(HttpStatusCode.ITEM_NOT_FOUND, HttpStatusMessages.NotFound);
+        }
         public DataResponse<UserQuery> Create(UserDto dto)
         {
             UpLoadImage upload = new UpLoadImage(_cloudinary);
             dto.UserId = Guid.NewGuid();
-            dto.Password = PasswordHelper.CreateHashedPassword(dto.Password = "vanh1234");
+            dto.Password = PasswordHelper.CreateHashedPassword(dto.Password);
+            var checkRole = _roleRepository.GetById(Guid.Parse("28DECD9E-266E-4C37-B255-43A2F126DB6E"));
+            if(checkRole != null)
+            {
+                dto.RoleId = checkRole.RoleId;
+                
+            }
             if (dto.file != null)
             {
                 dto.Avatar = upload.ImageUpload(dto.file);
             }
-            var newData = _userRepository.Create(_mapper.Map<User>(dto));
+            var mapData = _mapper.Map<User>(dto);
+            mapData.Role = checkRole.RoleName;
+            var newData = _userRepository.Create(mapData);
             if (newData != null)
             {
                 return new DataResponse<UserQuery>(_mapper.Map<UserQuery>(newData), HttpStatusCode.OK, HttpStatusMessages.AddedSuccesfully);
@@ -392,30 +411,21 @@ namespace DormSearchBe.Application.Service
             }
             return false;
         }
-
-        public DataResponse<List<UserDto>> ItemsList()
-        {
-            throw new NotImplementedException();
-        }
-
-
         public DataResponse<TokenDto> UserLoginByGoole(GoogleLoginRequest request)
         {
             throw new NotImplementedException();
         }
-
-
-        public IEnumerable<UserDto> GetAll()
-        {
-            throw new NotImplementedException();
-        }
-
         public bool Add(UserDto dto)
         {
             throw new NotImplementedException();
         }
 
         public bool UpdatePass(UserDto dto)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IEnumerable<UserDto> GetAll()
         {
             throw new NotImplementedException();
         }

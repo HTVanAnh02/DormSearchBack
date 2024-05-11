@@ -53,27 +53,27 @@ namespace DormSearchBe.Api.Controllers.Auth
         {
             return Ok(_userService.Login(dto));
         }
-        [Authorize]
-        [HttpPost("register")]
-        public IActionResult SingUp([FromForm] Register singup)
-        {
-            var acoount = _userService.GetAll().Where(x => x.Email.Equals(singup.Email)).FirstOrDefault();
-            if (acoount != null)
-            {
-                return Conflict(new { message = "Tài khoản đã tồn tại." });
-            }
-            var accountClient = new UserDto()
-            {
-                Email = singup.Email,
-                Password = maHoaMatKhau(singup.Password),
+        /*[Authorize]*/
+        //[HttpPost("register")]
+        //public IActionResult SingUp([FromForm] Register singup)
+        //{
+        //    var acoount = _userService.GetAll().Where(x => x.Email.Equals(singup.Email)).FirstOrDefault();
+        //    if (acoount != null)
+        //    {
+        //        return Conflict(new { message = "Tài khoản đã tồn tại." });
+        //    }
+        //    var accountClient = new UserDto()
+        //    {
+        //        Email = singup.Email,
+        //        Password = maHoaMatKhau(singup.Password),
                 
-            };
-            if (_userService.Add(accountClient))
-            {
-                return Ok("Bạn đã đăng ký thành công");
-            }
-            return Conflict();
-        }
+        //    };
+        //    if (_userService.Add(accountClient))
+        //    {
+        //        return Ok("Bạn đã đăng ký thành công");
+        //    }
+        //    return Conflict();
+        //}
         /* [HttpPost("register")]
          public IActionResult User_Register(Register dto)
          {

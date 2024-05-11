@@ -18,14 +18,13 @@ namespace DormSearchBe.Domain.Dto.Houses
         public string? AddressHouses { get; set; }
         public string? DateSubmitted { get; set; }
         public string? Photos { get; set; }
+        public string? Contact { get; set; }
         public int TrangThai { get; set; }
         public IFormFile? file { get; set; }
         public string? imageDelete { get; set; }
-        public Guid? AcreageId { get; set; }
         public Guid? AreasId { get; set; }
         public Guid? UserId { get; set; }
         public Guid? CityId { get; set; }
-        public Guid? PriceId {  get; set; } 
         public Guid? FavoritesId { get; set; }
         public Guid? RoomstyleId { get; set; }
     }

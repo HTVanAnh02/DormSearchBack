@@ -9,7 +9,6 @@ namespace DormSearchBe.Infrastructure.Context
     {
         public DormSearch_DbContext(DbContextOptions<DormSearch_DbContext> options) : base(options) { }
         public virtual DbSet<Permission> Permissions { get; set; }
-        public virtual DbSet<Acreage> Acreages { get; set; }
         public virtual DbSet<Areas> Areas { get; set; }
         public virtual DbSet<City> Cities { get; set; }
         public virtual DbSet<Favorites> Favorites { get; set; }
@@ -23,16 +22,7 @@ namespace DormSearchBe.Infrastructure.Context
         {
             base.OnModelCreating(modelBuilder);
 
-            modelBuilder.Entity<Permission>(e =>
-            {
-                e.ToTable("Permissions");
-                e.HasKey(e => e.PermissionId);
-            });
-            modelBuilder.Entity<Acreage>(e =>
-            {
-                e.ToTable("Acreage");
-                e.HasKey(e => e.AcreageId);
-            });
+           
             modelBuilder.Entity<Areas>(e =>
             {
                 e.ToTable("Areass");
@@ -56,9 +46,9 @@ namespace DormSearchBe.Infrastructure.Context
                 e.HasKey(e => e.HousesId);
                 e.HasOne(e => e.Areas).WithMany(e => e.Houses).HasForeignKey(e => e.AreasId).OnDelete(DeleteBehavior.ClientSetNull);
                 e.HasOne(e => e.City).WithMany(e => e.Houses).HasForeignKey(e => e.CityId).OnDelete(DeleteBehavior.ClientSetNull);
-                e.HasOne(e => e.Favorites).WithMany(e => e.Houses).HasForeignKey(e => e.FavoritesId).OnDelete(DeleteBehavior.ClientSetNull);
+               /* e.HasOne(e => e.Favorites).WithMany(e => e.Houses).HasForeignKey(e => e.FavoritesId).OnDelete(DeleteBehavior.ClientSetNull);*/
                /* e.HasOne(e => e.Prices).WithMany(e => e.Houses).HasForeignKey(e => e.PriceId).OnDelete(DeleteBehavior.ClientSetNull);*/
-                e.HasOne(e => e.Ratings).WithMany(e => e.Houses).HasForeignKey(e => e.RatingsId).OnDelete(DeleteBehavior.ClientSetNull);
+                /*e.HasOne(e => e.Ratings).WithMany(e => e.Houses).HasForeignKey(e => e.RatingsId).OnDelete(DeleteBehavior.ClientSetNull);*/
                 /*e.HasOne(e => e.Users).WithMany(e => e.Houses).HasForeignKey(e => e.UserId).OnDelete(DeleteBehavior.ClientSetNull);*/
                 e.HasOne(e => e.Roomstyles).WithMany(e => e.Houses).HasForeignKey(e => e.RoomstyleId).OnDelete(DeleteBehavior.ClientSetNull);
             });

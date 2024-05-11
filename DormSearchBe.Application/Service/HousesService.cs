@@ -6,7 +6,6 @@ using DormSearchBe.Application.Wrappers.Concrete;
 using DormSearchBe.Domain.Dto.Areas;
 using DormSearchBe.Domain.Dto.City;
 using DormSearchBe.Domain.Dto.Houses;
-using DormSearchBe.Domain.Dto.Prices;
 using DormSearchBe.Domain.Dto.Roomstyle;
 using DormSearchBe.Domain.Dto.User;
 using DormSearchBe.Domain.Entity;
@@ -28,14 +27,12 @@ namespace DormSearchBe.Application.Service
         private readonly IMapper _mapper;
         private readonly IAreasRepository _areasRepository;
         private readonly ICityRepository _cityRepository;
-        private readonly IPricesRepository _pricesRepository;
         private readonly IRoomstyleRepository _roomstyleRepository;
         private readonly IUserRepository _usersRepository;
         private readonly Cloudinary _cloudinary;
         public HousesService(IHousesRepository housesRepository, IMapper mapper,
             IAreasRepository areasRepository,
             ICityRepository cityRepository,
-            IPricesRepository aryRepository,
             IRoomstyleRepository roomstyleRepository,
             IUserRepository usersRepository,
             Cloudinary cloudinary)
@@ -44,7 +41,6 @@ namespace DormSearchBe.Application.Service
             _mapper = mapper;
             _areasRepository = areasRepository;
             _cityRepository = cityRepository;
-            _pricesRepository = aryRepository;
             _roomstyleRepository = roomstyleRepository;
             _usersRepository = usersRepository;
             _cloudinary = cloudinary;
@@ -117,13 +113,11 @@ namespace DormSearchBe.Application.Service
         {
             var query = _mapper.Map<List<HousesQuery>>(_housesRepository.GetAllData().Where(x => x.UserId == objId).ToList());
             var areas = _mapper.Map<List<AreasDto>>(_areasRepository.GetAllData());
-            var pricess = _mapper.Map<List<PricesDto>>(_pricesRepository.GetAllData());
             var cities = _mapper.Map<List<CityDto>>(_cityRepository.GetAllData());
             var users = _mapper.Map<List<UserDto>>(_usersRepository.GetAllData());
             var roomstyles = _mapper.Map<List<RoomstyleDto>>(_roomstyleRepository.GetAllData());
             var items = from houses in query
                         join area in areas on houses.AreasId equals area.AreasId
-                        join prices in pricess on houses.PriceId equals prices.PriceId
                         join roomstyle in roomstyles on houses.RoomstyleId equals roomstyle.RoomstyleId
                         join user in users on houses.UsersId equals user.UserId
                         join city in cities on houses.CityId equals city.CityId
@@ -137,7 +131,6 @@ namespace DormSearchBe.Application.Service
                             AddressHouses = houses.AddressHouses,
                             DateSubmitted = houses.DateSubmitted,
                             AreasName = area.AreasName,
-                            Price = prices.Price,
                             RoomstyleName = roomstyle.RoomstyleName,
                             UsersName = user.FullName,
                             CityName = city.CityName,
@@ -183,7 +176,6 @@ namespace DormSearchBe.Application.Service
         public PagedDataResponse<HousesQuery> ItemsByHome(CommonQueryByHome queryByHome)
         {
             var query = _housesRepository.GetAllData().AsQueryable();
-            var pricess = _pricesRepository.GetAllData();
             var areas = _areasRepository.GetAllData();
             var roomstyles = _roomstyleRepository.GetAllData();
             var cities = _cityRepository.GetAllData();

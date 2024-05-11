@@ -22,39 +22,6 @@ namespace DormSearchBe.Infrastructure.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("DormSearchBe.Domain.Entity.Acreage", b =>
-                {
-                    b.Property<Guid>("AcreageId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("Acreages")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime?>("createdAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<Guid?>("createdBy")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime?>("deletedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<Guid?>("deletedBy")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime?>("updatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<Guid?>("updatedBy")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.HasKey("AcreageId");
-
-                    b.ToTable("Acreage", (string)null);
-                });
-
             modelBuilder.Entity("DormSearchBe.Domain.Entity.Areas", b =>
                 {
                     b.Property<Guid>("AreasId")
@@ -167,9 +134,6 @@ namespace DormSearchBe.Infrastructure.Migrations
                     b.Property<string>("Acreage")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<Guid?>("AcreagesAcreageId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<string>("AddressHouses")
                         .HasColumnType("nvarchar(max)");
 
@@ -178,6 +142,9 @@ namespace DormSearchBe.Infrastructure.Migrations
 
                     b.Property<Guid?>("CityId")
                         .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Contact")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("DateSubmitted")
                         .HasColumnType("nvarchar(max)");
@@ -206,6 +173,9 @@ namespace DormSearchBe.Infrastructure.Migrations
                     b.Property<string>("Title")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("TrangThai")
+                        .HasColumnType("int");
+
                     b.Property<Guid?>("UserId")
                         .HasColumnType("uniqueidentifier");
 
@@ -228,8 +198,6 @@ namespace DormSearchBe.Infrastructure.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.HasKey("HousesId");
-
-                    b.HasIndex("AcreagesAcreageId");
 
                     b.HasIndex("AreasId");
 
@@ -307,7 +275,7 @@ namespace DormSearchBe.Infrastructure.Migrations
 
                     b.HasKey("PermissionId");
 
-                    b.ToTable("Permissions", (string)null);
+                    b.ToTable("Permissions");
                 });
 
             modelBuilder.Entity("DormSearchBe.Domain.Entity.Ratings", b =>
@@ -545,10 +513,6 @@ namespace DormSearchBe.Infrastructure.Migrations
 
             modelBuilder.Entity("DormSearchBe.Domain.Entity.Houses", b =>
                 {
-                    b.HasOne("DormSearchBe.Domain.Entity.Acreage", "Acreages")
-                        .WithMany("Houses")
-                        .HasForeignKey("AcreagesAcreageId");
-
                     b.HasOne("DormSearchBe.Domain.Entity.Areas", "Areas")
                         .WithMany("Houses")
                         .HasForeignKey("AreasId");
@@ -557,11 +521,11 @@ namespace DormSearchBe.Infrastructure.Migrations
                         .WithMany("Houses")
                         .HasForeignKey("CityId");
 
-                    b.HasOne("DormSearchBe.Domain.Entity.Favorites", "Favorites")
+                    b.HasOne("DormSearchBe.Domain.Entity.Favorites", null)
                         .WithMany("Houses")
                         .HasForeignKey("FavoritesId");
 
-                    b.HasOne("DormSearchBe.Domain.Entity.Ratings", "Ratings")
+                    b.HasOne("DormSearchBe.Domain.Entity.Ratings", null)
                         .WithMany("Houses")
                         .HasForeignKey("RatingsId");
 
@@ -569,15 +533,9 @@ namespace DormSearchBe.Infrastructure.Migrations
                         .WithMany("Houses")
                         .HasForeignKey("RoomstyleId");
 
-                    b.Navigation("Acreages");
-
                     b.Navigation("Areas");
 
                     b.Navigation("City");
-
-                    b.Navigation("Favorites");
-
-                    b.Navigation("Ratings");
 
                     b.Navigation("Roomstyles");
                 });
@@ -623,11 +581,6 @@ namespace DormSearchBe.Infrastructure.Migrations
                     b.Navigation("Ratings");
 
                     b.Navigation("Roles");
-                });
-
-            modelBuilder.Entity("DormSearchBe.Domain.Entity.Acreage", b =>
-                {
-                    b.Navigation("Houses");
                 });
 
             modelBuilder.Entity("DormSearchBe.Domain.Entity.Areas", b =>
