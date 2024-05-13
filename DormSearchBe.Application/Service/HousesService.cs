@@ -109,22 +109,27 @@ namespace DormSearchBe.Application.Service
         }
 
 
-        public PagedDataResponse<HousesQuery> Items(CommonListQuery commonListQuery, Guid objId)
+        public PagedDataResponse<HousesQuery> Items(CommonListQuery commonListQuery)
         {
-            var query = _mapper.Map<List<HousesQuery>>(_housesRepository.GetAllData().Where(x => x.UserId == objId).ToList());
-            var areas = _mapper.Map<List<AreasDto>>(_areasRepository.GetAllData());
-            var cities = _mapper.Map<List<CityDto>>(_cityRepository.GetAllData());
-            var users = _mapper.Map<List<UserDto>>(_usersRepository.GetAllData());
-            var roomstyles = _mapper.Map<List<RoomstyleDto>>(_roomstyleRepository.GetAllData());
+            var query = _mapper.Map<List<HousesDto>>(_housesRepository.GetAllData());
+            var areas = _mapper.Map<List<AreasQuery>>(_areasRepository.GetAllData());
+            var cities = _mapper.Map<List<CityQuery>>(_cityRepository.GetAllData());
+            var users = _mapper.Map<List<UserQuery>>(_usersRepository.GetAllData());
+            var roomstyles = _mapper.Map<List<RoomstyleQuery>>(_roomstyleRepository.GetAllData());
             var items = from houses in query
                         join area in areas on houses.AreasId equals area.AreasId
                         join roomstyle in roomstyles on houses.RoomstyleId equals roomstyle.RoomstyleId
-                        join user in users on houses.UsersId equals user.UserId
                         join city in cities on houses.CityId equals city.CityId
+                        join user in users on houses.UserId equals user.UserId
 
                         select new HousesQuery
                         {
+                            
                             HousesId = houses.HousesId,
+                            AreasId=houses.AreasId,
+                            CityId=houses.CityId,
+                            UsersId=houses.UserId,
+                            RoomstyleId=houses.RoomstyleId,
                             HousesName = houses.HousesName,
                             Title = houses.Title,
                             Interior = houses.Interior,
@@ -134,6 +139,10 @@ namespace DormSearchBe.Application.Service
                             RoomstyleName = roomstyle.RoomstyleName,
                             UsersName = user.FullName,
                             CityName = city.CityName,
+                            Acreage=houses.Acreage,
+                            Contact=houses.Contact,
+                            Photos=houses.Photos,
+                            Price=houses.Price,
                         };
             if (!string.IsNullOrEmpty(commonListQuery.keyword))
             {
@@ -149,7 +158,7 @@ namespace DormSearchBe.Application.Service
                  x.RoomstyleName.Contains(commonListQuery.keyword)).ToList();
             }
 
-            var paginatedResult = PaginatedList<HousesQuery>.ToPageList(_mapper.Map<List<HousesQuery>>(items), commonListQuery.page, commonListQuery.limit);
+            var paginatedResult = PaginatedList<HousesQuery>.ToPageList(items.ToList(), commonListQuery.page, commonListQuery.limit);
             return new PagedDataResponse<HousesQuery>(paginatedResult, 200, items.Count());
         }
 
@@ -227,10 +236,10 @@ namespace DormSearchBe.Application.Service
             {
                 items = items.Where(x => x.CityId == cityId);
             }
-            if (!string.IsNullOrEmpty(queryByHome.favoritesId) && Guid.TryParse(queryByHome.favoritesId, out var favoritesId))
+          /*  if (!string.IsNullOrEmpty(queryByHome.favoritesId) && Guid.TryParse(queryByHome.favoritesId, out var favoritesId))
             {
                 items = items.Where(x => x.FavoritesId == favoritesId);
-            }
+            }*/
             if (!string.IsNullOrEmpty(queryByHome.roomstyleId) && Guid.TryParse(queryByHome.roomstyleId, out var roomstyleId))
             {
                 items = items.Where(x => x.RoomstyleId == roomstyleId);
@@ -328,10 +337,10 @@ namespace DormSearchBe.Application.Service
                                          x.RoomstyleName.Contains(queryByHome.keyword));
             }
 
-            if (!string.IsNullOrEmpty(queryByHome.favoritesId) && Guid.TryParse(queryByHome.favoritesId, out var favoritesId))
+            /*if (!string.IsNullOrEmpty(queryByHome.favoritesId) && Guid.TryParse(queryByHome.favoritesId, out var favoritesId))
             {
                 items = items.Where(x => x.FavoritesId.Equals(favoritesId));
-            }
+            }*/
             if (!string.IsNullOrEmpty(queryByHome.roomstyleId) && Guid.TryParse(queryByHome.roomstyleId, out var roomstyleId))
             {
                 items = items.Where(x => x.RoomstyleId == roomstyleId);

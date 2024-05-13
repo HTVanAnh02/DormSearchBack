@@ -11,7 +11,7 @@ namespace DormSearchBe.Application.IService
 {
     public interface IHousesService
     {
-        PagedDataResponse<HousesQuery> Items(CommonListQuery commonListQuery, Guid objId);
+        PagedDataResponse<HousesQuery> Items(CommonListQuery commonListQuery);
         DataResponse<HousesQuery> Create(HousesDto dto);
         DataResponse<HousesQuery> Update(HousesDto dto);
         DataResponse<HousesQuery> Delete(Guid id);

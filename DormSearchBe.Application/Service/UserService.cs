@@ -12,6 +12,7 @@ using DormSearchBe.Domain.Repositories;
 using DormSearchBe.Infrastructure.Exceptions;
 using DormSearchBe.Infrastructure.Repositories;
 using DormSearchBe.Infrastructure.Settings;
+using Google.Apis.Auth;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.SqlServer.Server;
@@ -33,17 +34,15 @@ namespace DormSearchBe.Application.Service
         private readonly IUserRepository _userRepository;
         public readonly IMapper _mapper;
         private readonly IRoleRepository _roleRepository;
-        private readonly IPermissionRepository _permissionRepository;
         private readonly IRefreshTokenRepository _refeshtokenRepository;
         private readonly JWTSettings _jwtSettings;
         private readonly Cloudinary _cloudinary;
 
-        public UserService(IOptions<JWTSettings> jwtSettings, IUserRepository userRepository, IMapper mapper, IRoleRepository roleRepository, IPermissionRepository permissionRepository, Cloudinary cloudinary, IRefreshTokenRepository refeshtokenRepository)
+        public UserService(IOptions<JWTSettings> jwtSettings, IUserRepository userRepository, IMapper mapper, IRoleRepository roleRepository,Cloudinary cloudinary, IRefreshTokenRepository refeshtokenRepository)
         {
             _userRepository = userRepository;
             _mapper = mapper;
             _roleRepository = roleRepository;
-            _permissionRepository = permissionRepository;
             _cloudinary = cloudinary;
             _jwtSettings = jwtSettings.Value;
             _refeshtokenRepository = refeshtokenRepository;
@@ -58,30 +57,7 @@ namespace DormSearchBe.Application.Service
             }
             throw new ApiException(HttpStatusCode.ITEM_NOT_FOUND, HttpStatusMessages.NotFound);
         }
-        public DataResponse<UserQuery> Create(UserDto dto)
-        {
-            UpLoadImage upload = new UpLoadImage(_cloudinary);
-            dto.UserId = Guid.NewGuid();
-            dto.Password = PasswordHelper.CreateHashedPassword(dto.Password);
-            var checkRole = _roleRepository.GetById(Guid.Parse("28DECD9E-266E-4C37-B255-43A2F126DB6E"));
-            if(checkRole != null)
-            {
-                dto.RoleId = checkRole.RoleId;
-                
-            }
-            if (dto.file != null)
-            {
-                dto.Avatar = upload.ImageUpload(dto.file);
-            }
-            var mapData = _mapper.Map<User>(dto);
-            mapData.Role = checkRole.RoleName;
-            var newData = _userRepository.Create(mapData);
-            if (newData != null)
-            {
-                return new DataResponse<UserQuery>(_mapper.Map<UserQuery>(newData), HttpStatusCode.OK, HttpStatusMessages.AddedSuccesfully);
-            }
-            throw new ApiException(HttpStatusCode.BAD_REQUEST, HttpStatusMessages.AddedError);
-        }
+        
 
         public DataResponse<UserQuery> Delete(Guid id)
         {
@@ -104,6 +80,8 @@ namespace DormSearchBe.Application.Service
             throw new ApiException(HttpStatusCode.BAD_REQUEST, HttpStatusMessages.DeletedError);
         }
 
+        
+
         public PagedDataResponse<UserQuery> Items(CommonListQuery commonList)
         {
             var query = _mapper.Map<List<UserQuery>>(_userRepository.GetAllData());
@@ -125,6 +103,32 @@ namespace DormSearchBe.Application.Service
             var paginatedResult = PaginatedList<UserQuery>.ToPageList(query, commonList.page, commonList.limit);
             return new PagedDataResponse<UserQuery>(paginatedResult, 200, query.Count());
 
+        }
+
+        public DataResponse<UserQuery> Create(UserDto dto)
+        {
+            UpLoadImage upload = new UpLoadImage(_cloudinary);
+            dto.UserId = Guid.NewGuid();
+            dto.Password = PasswordHelper.CreateHashedPassword(dto.Password);
+            Guid ids = dto.RoleId.Value;
+            var checkRole = _roleRepository.GetById(ids);
+            if (checkRole != null)
+            {
+                dto.RoleId = checkRole.RoleId;
+
+            }
+            if (dto.file != null)
+            {
+                dto.Avatar = upload.ImageUpload(dto.file);
+            }
+            var mapData = _mapper.Map<User>(dto);
+            mapData.Role = checkRole.RoleName;
+            var newData = _userRepository.Create(mapData);
+            if (newData != null)
+            {
+                return new DataResponse<UserQuery>(_mapper.Map<UserQuery>(newData), HttpStatusCode.OK, HttpStatusMessages.AddedSuccesfully);
+            }
+            throw new ApiException(HttpStatusCode.BAD_REQUEST, HttpStatusMessages.AddedError);
         }
 
         public DataResponse<UserQuery> Update(UserDto dto)
@@ -194,12 +198,21 @@ namespace DormSearchBe.Application.Service
                     throw new ApiException(400, "Email đã được sử dụng cho một tài khoản khác");
                 }
 
+                var checkRole = _roleRepository.GetById(Guid.Parse("C414A73B-B3F4-4497-125E-08DC73275CEC"));
+
                 var newUser = new User
                 {
                     Email = dto.Email,
                     Password = PasswordHelper.CreateHashedPassword(dto.Password),
+
                     // Các thuộc tính khác của người dùng
                 };
+
+                if(checkRole != null)
+                {
+                    newUser.RoleId = checkRole.RoleId;
+                    newUser.Role = checkRole.RoleName;
+                }
 
                 _userRepository.Create(newUser);
 
@@ -348,7 +361,7 @@ namespace DormSearchBe.Application.Service
             return tokenDto;
         }
 
-       /* public DataResponse<TokenDto> UserLoginByGoole(GoogleLoginRequest request)
+        public DataResponse<TokenDto> UserLoginByGoole(GoogleLoginRequest request)
         {
             try
             {
@@ -360,9 +373,9 @@ namespace DormSearchBe.Application.Service
                 if (!checkEmail(validPayload.Email))
                 {
 
-                    var job_seeker = _userRepository.GetAllData().Where(x => x.Email == validPayload.Email).SingleOrDefault();
-                    _userRepository.Update(job_seeker);
-                    var token = CreateToken(job_seeker);
+                    var user = _userRepository.GetAllData().Where(x => x.Email == validPayload.Email).SingleOrDefault();
+                    _userRepository.Update(user);
+                    var token = CreateToken(user);
                     var tokenres = new TokenDto()
                     {
                         AccessToken = token.AccessToken,
@@ -401,20 +414,17 @@ namespace DormSearchBe.Application.Service
             {
                 throw new ApiException(HttpStatusCode.BAD_REQUEST, "Token không hợp lệ");
             }
-        }*/
+        }
         public bool checkEmail(string email)
         {
-            var job_seeker = _userRepository.GetAllData().FirstOrDefault(x => x.Email.Equals(email));
-            if (job_seeker == null)
+            var user = _userRepository.GetAllData().FirstOrDefault(x => x.Email.Equals(email));
+            if (user == null)
             {
                 return true;
             }
             return false;
         }
-        public DataResponse<TokenDto> UserLoginByGoole(GoogleLoginRequest request)
-        {
-            throw new NotImplementedException();
-        }
+
         public bool Add(UserDto dto)
         {
             throw new NotImplementedException();
@@ -429,5 +439,7 @@ namespace DormSearchBe.Application.Service
         {
             throw new NotImplementedException();
         }
+
+      
     }
 }

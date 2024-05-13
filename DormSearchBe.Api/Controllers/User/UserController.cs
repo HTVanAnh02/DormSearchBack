@@ -1,6 +1,8 @@
 ﻿using CloudinaryDotNet.Core;
 using DormSearchBe.Application.Helpers;
 using DormSearchBe.Application.IService;
+using DormSearchBe.Application.Service;
+using DormSearchBe.Domain.Dto.Role;
 using DormSearchBe.Domain.Dto.User;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Cryptography;
@@ -29,12 +31,17 @@ namespace DormSearchBe.Api.Controllers.User
         {
             return Ok(_userService.Create(dto));
         }
-
         [HttpPatch("{id}")]
         public IActionResult Update([FromForm] UserDto dto)
         {
             return Ok(_userService.Update(dto));
         }
+        /*[HttpPatch("{id}")]
+        public IActionResult Update([FromForm] Guid Id, UserDto dto)
+        {
+            dto.UserId = Id;
+            return Ok(_userService.Update(dto));
+        }*/
         /*[HttpPost("DoiMatKhau")]
         public IActionResult DoiMatKhau(DoiMatKhau model)
         {

@@ -77,7 +77,7 @@ var cloudinaryAccount = new Account(
 var cloudinary = new Cloudinary(cloudinaryAccount);
 builder.Services.AddSingleton(cloudinary);
 var app = builder.Build();
-using (var scope = app.Services.CreateScope())
+/*using (var scope = app.Services.CreateScope())
 {
     try
     {
@@ -97,7 +97,7 @@ using (var scope = app.Services.CreateScope())
                     createdAt = DateTime.Today.AddDays(1).AddHours(now.Hour).AddMinutes(now.Minute).AddSeconds(now.Second),
                     FullName = "Vân Anh",
                     Email = "anh123@gmail.com",
-                    Role = "User",
+                    Role = "3CD3EE9D-16A0-4A3D-B7A4-E8FBBE6B1678",
                     Gender = "Nữ",
                     Password = PasswordHelper.CreateHashedPassword(password),
                     Address = "Hà Nội",
@@ -115,7 +115,7 @@ using (var scope = app.Services.CreateScope())
         Console.WriteLine($"An error occurred: {ex.Message}");
         throw new ApiException(400, $"An error occurred: {ex.Message}");
     }
-}
+}*/
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();

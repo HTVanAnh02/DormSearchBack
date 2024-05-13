@@ -27,7 +27,7 @@ namespace DormSearchBe.Domain.Dto.Houses
         public string? CityName { get; set; }
         public Guid? RoomstyleId { get; set; }
         public string? RoomstyleName { get;set; }
-        public Guid? FavoritesId {  get; set; }
-        public bool IsFavorites { get; set; }
+     /*   public Guid? FavoritesId {  get; set; }
+        public bool IsFavorites { get; set; }*/
     }
 }

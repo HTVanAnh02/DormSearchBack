@@ -24,12 +24,12 @@ namespace DormSearchBe.Api.Controllers.Houses
         [HttpGet]
         public IActionResult GetAll([FromQuery] CommonListQuery query)
         {
-            var objId = HttpContext.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+           /* var objId = HttpContext.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
             if (objId == null)
             {
                 throw new ApiException(HttpStatusCode.FORBIDDEN, HttpStatusMessages.Forbidden);
-            }
-            return Ok(_houseService.Items(query, Guid.Parse(objId)));
+            }*/
+            return Ok(_houseService.Items(query));
         }
         [HttpPost]
         public IActionResult Create([FromForm]HousesDto dto)

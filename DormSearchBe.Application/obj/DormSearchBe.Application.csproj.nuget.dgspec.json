@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\TAIWAN\\DormSearchBe\\DormSearchBe.Application\\DormSearchBe.Application.csproj": {}
+    "D:\\ĐỒ ÁN\\VanAnh\\VanAnh\\DormSearchBack\\DormSearchBe.Application\\DormSearchBe.Application.csproj": {}
   },
   "projects": {
-    "D:\\TAIWAN\\DormSearchBe\\DormSearchBe.Application\\DormSearchBe.Application.csproj": {
+    "D:\\ĐỒ ÁN\\VanAnh\\VanAnh\\DormSearchBack\\DormSearchBe.Application\\DormSearchBe.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\TAIWAN\\DormSearchBe\\DormSearchBe.Application\\DormSearchBe.Application.csproj",
+        "projectUniqueName": "D:\\ĐỒ ÁN\\VanAnh\\VanAnh\\DormSearchBack\\DormSearchBe.Application\\DormSearchBe.Application.csproj",
         "projectName": "DormSearchBe.Application",
-        "projectPath": "D:\\TAIWAN\\DormSearchBe\\DormSearchBe.Application\\DormSearchBe.Application.csproj",
+        "projectPath": "D:\\ĐỒ ÁN\\VanAnh\\VanAnh\\DormSearchBack\\DormSearchBe.Application\\DormSearchBe.Application.csproj",
         "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "D:\\TAIWAN\\DormSearchBe\\DormSearchBe.Application\\obj\\",
+        "outputPath": "D:\\ĐỒ ÁN\\VanAnh\\VanAnh\\DormSearchBack\\DormSearchBe.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,11 +28,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\TAIWAN\\DormSearchBe\\DormSearchBe.Domain\\DormSearchBe.Domain.csproj": {
-                "projectPath": "D:\\TAIWAN\\DormSearchBe\\DormSearchBe.Domain\\DormSearchBe.Domain.csproj"
+              "D:\\ĐỒ ÁN\\VanAnh\\VanAnh\\DormSearchBack\\DormSearchBe.Domain\\DormSearchBe.Domain.csproj": {
+                "projectPath": "D:\\ĐỒ ÁN\\VanAnh\\VanAnh\\DormSearchBack\\DormSearchBe.Domain\\DormSearchBe.Domain.csproj"
               },
-              "D:\\TAIWAN\\DormSearchBe\\DormSearchBe.Infrastructure\\DormSearchBe.Infrastructure.csproj": {
-                "projectPath": "D:\\TAIWAN\\DormSearchBe\\DormSearchBe.Infrastructure\\DormSearchBe.Infrastructure.csproj"
+              "D:\\ĐỒ ÁN\\VanAnh\\VanAnh\\DormSearchBack\\DormSearchBe.Infrastructure\\DormSearchBe.Infrastructure.csproj": {
+                "projectPath": "D:\\ĐỒ ÁN\\VanAnh\\VanAnh\\DormSearchBack\\DormSearchBe.Infrastructure\\DormSearchBe.Infrastructure.csproj"
               }
             }
           }
@@ -54,6 +54,10 @@
             "CloudinaryDotNet": {
               "target": "Package",
               "version": "[1.26.2, )"
+            },
+            "Google.Apis.Auth": {
+              "target": "Package",
+              "version": "[1.67.0, )"
             },
             "MediatR": {
               "target": "Package",
@@ -102,14 +106,14 @@
         }
       }
     },
-    "D:\\TAIWAN\\DormSearchBe\\DormSearchBe.Domain\\DormSearchBe.Domain.csproj": {
+    "D:\\ĐỒ ÁN\\VanAnh\\VanAnh\\DormSearchBack\\DormSearchBe.Domain\\DormSearchBe.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\TAIWAN\\DormSearchBe\\DormSearchBe.Domain\\DormSearchBe.Domain.csproj",
+        "projectUniqueName": "D:\\ĐỒ ÁN\\VanAnh\\VanAnh\\DormSearchBack\\DormSearchBe.Domain\\DormSearchBe.Domain.csproj",
         "projectName": "DormSearchBe.Domain",
-        "projectPath": "D:\\TAIWAN\\DormSearchBe\\DormSearchBe.Domain\\DormSearchBe.Domain.csproj",
+        "projectPath": "D:\\ĐỒ ÁN\\VanAnh\\VanAnh\\DormSearchBack\\DormSearchBe.Domain\\DormSearchBe.Domain.csproj",
         "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "D:\\TAIWAN\\DormSearchBe\\DormSearchBe.Domain\\obj\\",
+        "outputPath": "D:\\ĐỒ ÁN\\VanAnh\\VanAnh\\DormSearchBack\\DormSearchBe.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -181,14 +185,14 @@
         }
       }
     },
-    "D:\\TAIWAN\\DormSearchBe\\DormSearchBe.Infrastructure\\DormSearchBe.Infrastructure.csproj": {
+    "D:\\ĐỒ ÁN\\VanAnh\\VanAnh\\DormSearchBack\\DormSearchBe.Infrastructure\\DormSearchBe.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\TAIWAN\\DormSearchBe\\DormSearchBe.Infrastructure\\DormSearchBe.Infrastructure.csproj",
+        "projectUniqueName": "D:\\ĐỒ ÁN\\VanAnh\\VanAnh\\DormSearchBack\\DormSearchBe.Infrastructure\\DormSearchBe.Infrastructure.csproj",
         "projectName": "DormSearchBe.Infrastructure",
-        "projectPath": "D:\\TAIWAN\\DormSearchBe\\DormSearchBe.Infrastructure\\DormSearchBe.Infrastructure.csproj",
+        "projectPath": "D:\\ĐỒ ÁN\\VanAnh\\VanAnh\\DormSearchBack\\DormSearchBe.Infrastructure\\DormSearchBe.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "D:\\TAIWAN\\DormSearchBe\\DormSearchBe.Infrastructure\\obj\\",
+        "outputPath": "D:\\ĐỒ ÁN\\VanAnh\\VanAnh\\DormSearchBack\\DormSearchBe.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -205,8 +209,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\TAIWAN\\DormSearchBe\\DormSearchBe.Domain\\DormSearchBe.Domain.csproj": {
-                "projectPath": "D:\\TAIWAN\\DormSearchBe\\DormSearchBe.Domain\\DormSearchBe.Domain.csproj"
+              "D:\\ĐỒ ÁN\\VanAnh\\VanAnh\\DormSearchBack\\DormSearchBe.Domain\\DormSearchBe.Domain.csproj": {
+                "projectPath": "D:\\ĐỒ ÁN\\VanAnh\\VanAnh\\DormSearchBack\\DormSearchBe.Domain\\DormSearchBe.Domain.csproj"
               }
             }
           }

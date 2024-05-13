@@ -47,7 +47,7 @@ namespace DormSearchBe.Api.Controllers.Auth
             }
             throw new ApiException(HttpStatusCode.NOT_FOUND, HttpStatusMessages.NotFound);
         }
-        [Authorize]
+       /* [Authorize]*/
         [HttpPost("UserLogin")]
         public IActionResult User_Login(Login dto)
         {
@@ -66,7 +66,7 @@ namespace DormSearchBe.Api.Controllers.Auth
         //    {
         //        Email = singup.Email,
         //        Password = maHoaMatKhau(singup.Password),
-                
+
         //    };
         //    if (_userService.Add(accountClient))
         //    {
@@ -74,11 +74,11 @@ namespace DormSearchBe.Api.Controllers.Auth
         //    }
         //    return Conflict();
         //}
-        /* [HttpPost("register")]
-         public IActionResult User_Register(Register dto)
-         {
-             return Ok(_userService.Register(dto));
-         }*/
+        [HttpPost("register")]
+        public IActionResult User_Register(Register dto)
+        {
+            return Ok(_userService.Register(dto));
+        }
         private readonly string hash = @"foxle@rn";
         private string maHoaMatKhau(string text)
         {

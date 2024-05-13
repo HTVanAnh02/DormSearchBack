@@ -17,6 +17,8 @@ namespace DormSearchBe.Application.Helpers
             return Base64Encode(passwordSalt) + "$" + Base64Encode(passwordHash);
         }
 
+
+
         public static bool VerifyPassword(string password, string hashedPassword)
         {
             var saltBytes = Base64Decode(hashedPassword.Split('$')[0]);
