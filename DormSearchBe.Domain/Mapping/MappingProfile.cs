@@ -5,6 +5,7 @@ using DormSearchBe.Domain.Dto.City;
 using DormSearchBe.Domain.Dto.Favorites;
 using DormSearchBe.Domain.Dto.Houses;
 using DormSearchBe.Domain.Dto.Messages;
+using DormSearchBe.Domain.Dto.Notification;
 using DormSearchBe.Domain.Dto.Ratings;
 using DormSearchBe.Domain.Dto.Role;
 using DormSearchBe.Domain.Dto.Roomstyle;
@@ -47,6 +48,8 @@ namespace DormSearchBe.Domain.Mapping
             CreateMap<Refresh_Token, RefreshTokenDto>().ReverseMap();
             CreateMap<User, UserQuery>().ReverseMap();
             CreateMap<User, UserDto>().ReverseMap();
+            CreateMap<Notification, NotificationDto>().ReverseMap();
+            CreateMap<Notification, NotificationQuery>().ReverseMap();
             
         }
     }

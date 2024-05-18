@@ -124,7 +124,6 @@ namespace DormSearchBe.Application.Service
 
                         select new HousesQuery
                         {
-                            
                             HousesId = houses.HousesId,
                             AreasId=houses.AreasId,
                             CityId=houses.CityId,
@@ -236,10 +235,7 @@ namespace DormSearchBe.Application.Service
             {
                 items = items.Where(x => x.CityId == cityId);
             }
-          /*  if (!string.IsNullOrEmpty(queryByHome.favoritesId) && Guid.TryParse(queryByHome.favoritesId, out var favoritesId))
-            {
-                items = items.Where(x => x.FavoritesId == favoritesId);
-            }*/
+          
             if (!string.IsNullOrEmpty(queryByHome.roomstyleId) && Guid.TryParse(queryByHome.roomstyleId, out var roomstyleId))
             {
                 items = items.Where(x => x.RoomstyleId == roomstyleId);
@@ -337,10 +333,6 @@ namespace DormSearchBe.Application.Service
                                          x.RoomstyleName.Contains(queryByHome.keyword));
             }
 
-            /*if (!string.IsNullOrEmpty(queryByHome.favoritesId) && Guid.TryParse(queryByHome.favoritesId, out var favoritesId))
-            {
-                items = items.Where(x => x.FavoritesId.Equals(favoritesId));
-            }*/
             if (!string.IsNullOrEmpty(queryByHome.roomstyleId) && Guid.TryParse(queryByHome.roomstyleId, out var roomstyleId))
             {
                 items = items.Where(x => x.RoomstyleId == roomstyleId);

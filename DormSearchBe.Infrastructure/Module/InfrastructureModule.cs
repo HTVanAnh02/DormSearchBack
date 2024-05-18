@@ -23,7 +23,8 @@ namespace DormSearchBe.Infrastructure.Module
             services.AddScoped<IRefreshTokenRepository,RefreshTokenRepository>();
             services.AddScoped<IRoleRepository, RoleRepository>();
             services.AddScoped<IRoomstyleRepository,RoomstyleRepository>();
-           
+            services.AddScoped<INotificationRepository, NotificationRepository>();
+
             services.AddScoped<IUserRepository, UserRepository>();
             return services;
         }
