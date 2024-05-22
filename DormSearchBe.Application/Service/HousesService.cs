@@ -12,12 +12,16 @@ using DormSearchBe.Domain.Entity;
 using DormSearchBe.Domain.Repositories;
 using DormSearchBe.Infrastructure.Exceptions;
 using DormSearchBe.Infrastructure.Settings;
+using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Diagnostics;
 using System.Linq;
+using System.Runtime.Serialization.DataContracts;
 using System.Text;
 using System.Threading.Tasks;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace DormSearchBe.Application.Service
 {
@@ -157,6 +161,32 @@ namespace DormSearchBe.Application.Service
                  x.RoomstyleName.Contains(commonListQuery.keyword)).ToList();
             }
 
+            if (!string.IsNullOrEmpty(commonListQuery.gia))
+            {
+                if(commonListQuery.gia == "từ thấp đền cao")
+                {
+                    items = items.OrderBy(x => x.Price);
+                }
+                if(commonListQuery.gia == "từ cao đến thấp")
+                {
+                    items = items.OrderByDescending(x => x.Price);
+                }
+            }
+            if (!string.IsNullOrEmpty(commonListQuery.thanhpho))
+            {
+                items = items.Where(x => x.CityId == Guid.Parse(commonListQuery.thanhpho));
+            }
+
+            if (!string.IsNullOrEmpty(commonListQuery.khuvuc))
+            {
+                items = items.Where(x => x.AreasId == Guid.Parse(commonListQuery.khuvuc));
+            }
+
+            if (!string.IsNullOrEmpty(commonListQuery.dientich))
+            {
+                items = items.Where(x => x.Acreage.Contains(commonListQuery.dientich));
+            }
+
             var paginatedResult = PaginatedList<HousesQuery>.ToPageList(items.ToList(), commonListQuery.page, commonListQuery.limit);
             return new PagedDataResponse<HousesQuery>(paginatedResult, 200, items.Count());
         }
@@ -164,12 +194,92 @@ namespace DormSearchBe.Application.Service
 
         public DataResponse<HousesQuery> GetById(Guid id)
         {
+            //var query = _mapper.Map<List<HousesDto>>(_housesRepository.GetAllData());
+            //var areas = _mapper.Map<List<AreasQuery>>(_areasRepository.GetAllData());
+            //var cities = _mapper.Map<List<CityQuery>>(_cityRepository.GetAllData());
+            //var users = _mapper.Map<List<UserQuery>>(_usersRepository.GetAllData());
+            //var roomstyles = _mapper.Map<List<RoomstyleQuery>>(_roomstyleRepository.GetAllData());
+            ////var item = _housesRepository.GetById(id);
+            //var item = from houses in query
+            //            join area in areas on houses.AreasId equals area.AreasId
+            //            join roomstyle in roomstyles on houses.RoomstyleId equals roomstyle.RoomstyleId
+            //            join city in cities on houses.CityId equals city.CityId
+            //            join user in users on houses.UserId equals user.UserId
+            //            where houses.HousesId == id
+
+            //           select new HousesQuery
+            //            {
+            //                HousesId = houses.HousesId,
+            //                AreasId = houses.AreasId,
+            //                CityId = houses.CityId,
+            //                UsersId = houses.UserId,
+            //                RoomstyleId = houses.RoomstyleId,
+            //                HousesName = houses.HousesName,
+            //                Title = houses.Title,
+            //                Interior = houses.Interior,
+            //                AddressHouses = houses.AddressHouses,
+            //                DateSubmitted = houses.DateSubmitted,
+            //                AreasName = area.AreasName,
+            //                RoomstyleName = roomstyle.RoomstyleName,
+            //                UsersName = user.FullName,
+            //                CityName = city.CityName,
+            //                Acreage = houses.Acreage,
+            //                Contact = houses.Contact,
+            //                Photos = houses.Photos,
+            //                Price = houses.Price,
+            //            };
+
+            //item.FirstOrDefault();
+            var data = new HousesQuery();
             var item = _housesRepository.GetById(id);
+      
             if (item == null)
             {
                 throw new ApiException(HttpStatusCode.ITEM_NOT_FOUND, HttpStatusMessages.NotFound);
             }
-            return new DataResponse<HousesQuery>(_mapper.Map<HousesQuery>(item), HttpStatusCode.OK, HttpStatusMessages.OK);
+            var areas = _areasRepository.GetById(item.AreasId.Value);
+            if (areas == null)
+            {
+                throw new ApiException(HttpStatusCode.ITEM_NOT_FOUND, HttpStatusMessages.NotFound);
+            }
+
+            var room = _roomstyleRepository.GetById(item.RoomstyleId.Value);
+            if (room == null)
+            {
+                throw new ApiException(HttpStatusCode.ITEM_NOT_FOUND, HttpStatusMessages.NotFound);
+            }
+
+            var user = _usersRepository.GetById(item.UserId.Value);
+            if (user == null)
+            {
+                throw new ApiException(HttpStatusCode.ITEM_NOT_FOUND, HttpStatusMessages.NotFound);
+            }
+
+            var city = _cityRepository.GetById(item.CityId.Value);
+            if (city == null)
+            {
+                throw new ApiException(HttpStatusCode.ITEM_NOT_FOUND, HttpStatusMessages.NotFound);
+            }
+            data.HousesId = item.HousesId;
+            data.AreasId = item.AreasId;
+            data.CityId = item.CityId;
+            data.UsersId = item.UserId;
+            data.RoomstyleId = item.RoomstyleId;
+            data.HousesName = item.HousesName;
+            data.Title = item.Title;
+            data.Interior = item.Interior;
+            data.AddressHouses = item.AddressHouses;
+            data.DateSubmitted = item.DateSubmitted;
+            data.Acreage = item.Acreage;
+            data.Contact = item.Contact;
+            data.Photos = item.Photos;
+            data.Price = item.Price;
+
+            data.AreasName = areas.AreasName;
+            data.RoomstyleName = room.RoomstyleName;
+            data.UsersName = user.FullName;
+            data.CityName = city.CityName;
+            return new DataResponse<HousesQuery>(data, HttpStatusCode.OK, HttpStatusMessages.OK);
         }
         public DataResponse<List<HousesQuery>> ItemsNoQuery()
         {

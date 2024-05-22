@@ -82,16 +82,16 @@ namespace DormSearchBe.Api.Controllers.Houses
         [HttpGet("{id}")]
         public IActionResult GetById(Guid id)
         {
-            var objId = HttpContext.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-            if (objId == null)
-            {
-                throw new ApiException(HttpStatusCode.FORBIDDEN, HttpStatusMessages.Forbidden);
-            }
-            var checkId = _usersService.ItemsList().Data.Where(x => x.UserId == Guid.Parse(objId)).FirstOrDefault();
-            if (checkId == null)
-            {
-                throw new ApiException(HttpStatusCode.ITEM_NOT_FOUND, "Không tìm thấy thông tin nhà ");
-            }
+            //var objId = HttpContext.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            //if (objId == null)
+            //{
+            //    throw new ApiException(HttpStatusCode.FORBIDDEN, HttpStatusMessages.Forbidden);
+            //}
+            //var checkId = _usersService.ItemsList().Data.Where(x => x.UserId == Guid.Parse(objId)).FirstOrDefault();
+            //if (checkId == null)
+            //{
+            //    throw new ApiException(HttpStatusCode.ITEM_NOT_FOUND, "Không tìm thấy thông tin nhà ");
+            //}
             return Ok(_houseService.GetById(id));
         }
     }

@@ -23,7 +23,6 @@ namespace DormSearchBe.Service.Dashboard
           IGenericRepository<Ratings> ratingRepository,
           IHousesService housesService
          )
-
         {
             _userRepository = userRepository;
             _houseRepository = houseRepository;
@@ -41,6 +40,16 @@ namespace DormSearchBe.Service.Dashboard
         public long getTotalRating()
         {
             return _ratingRepository.GetAllData().Count();
+       
+        }
+        public bool DuyetBaiDang(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IEnumerable<HousesDto> GetAll()
+        {
+            throw new NotImplementedException();
         }
 
         public IEnumerable<HousesDto> getBaiDangCanDuyet()
@@ -48,114 +57,42 @@ namespace DormSearchBe.Service.Dashboard
             throw new NotImplementedException();
         }
 
-        public bool DuyetBaiDang(int id)
+        public HousesDto GetById(Guid id)
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<DoanhThuTheoTuan> getDoanhThuTheoTuan()
+        public bool Update(HousesDto HousesDto)
         {
             throw new NotImplementedException();
         }
-        /* public IEnumerable<HousesDto> getBaiDangCanDuyet()
-{
-    return _housesService.GetAllBaiDangCanDuyet();
-}
 
-public bool DuyetBaiDang(Guid id)
-{
-    var find = _housesService.GetById(id);
-    if (find == null)
-        return false;
-    find.TrangThai = 1;
-    if (!_OrderService.Update(find)) return false;
-    return true;
-}
-public bool setDonHangDangGiao(int id)
-{
-    var find = _OrderService.GetById(id);
-    if (find == null)
-        return false;
-    find.TrangThai = 2;
-    if (!_OrderService.Update(find)) return false;
-    return true;
-}
-public DoanhThuTheoTuan getDoanhThuTheoTuan()
-{
-    DateTime currentDate = DateTime.Now;
-    DateTime startOfWeek = currentDate.Date.AddDays(-(int)currentDate.DayOfWeek);
-    DoanhThuTheoTuan doanhThuTuan = new DoanhThuTheoTuan();
-    for (int i = 0; i < 7; i++)
-    {
-        DateTime currentDay = startOfWeek.AddDays(i);
-
-        long totalRevenue = _OrderService.GetAll()
-            .Where(order => order.NgayDat.Date == currentDay.Date)
-            .Sum(order => order.Total);
-
-        // Gán giá trị doanh thu cho từng ngày trong tuần
-        switch (currentDay.DayOfWeek)
+        public IEnumerable<HousesDto> getPostbyUserId(int iduser)
         {
-            case DayOfWeek.Monday:
-                doanhThuTuan.T2 = totalRevenue;
-                break;
-            case DayOfWeek.Tuesday:
-                doanhThuTuan.T3 = totalRevenue;
-                break;
-            case DayOfWeek.Wednesday:
-                doanhThuTuan.T4 = totalRevenue;
-                break;
-            case DayOfWeek.Thursday:
-                doanhThuTuan.T5 = totalRevenue;
-                break;
-            case DayOfWeek.Friday:
-                doanhThuTuan.T6 = totalRevenue;
-                break;
-            case DayOfWeek.Saturday:
-                doanhThuTuan.T7 = totalRevenue;
-                break;
-            case DayOfWeek.Sunday:
-                doanhThuTuan.CN = totalRevenue;
-                break;
+            throw new NotImplementedException();
         }
-    }
-    return doanhThuTuan;
-}
-public IEnumerable<SoLuongTheoTrangThaiDonHang> getSoLuongDonHangTheoTrangThai()
+        /*public IEnumerable<HousesDto> getBaiDangCanDuyet()
 {
-    var TrangThaiDonHangList = _orderrepository.GetAll().Select(x => x.TrangThai).Distinct();
-    var ketqua = new List<SoLuongTheoTrangThaiDonHang>();
-    foreach (var item in TrangThaiDonHangList)
-    {
-        var tentrangthai = "";
-        switch (item)
-        {
-            case -1:
-                tentrangthai = "Hủy";
-                break;
-            case 0:
-                tentrangthai = "Chờ duyệt";
-                break;
-            case 1:
-                tentrangthai = "Đang chuẩn bị";
-                break;
-            case 2:
-                tentrangthai = "Đang giao";
-                break;
-            case 3:
-                tentrangthai = "Hoàn thành";
-                break;
-        }
-        var soluong = _orderrepository.GetAll().Count(x => x.TrangThai == item);
-        ketqua.Add(new SoLuongTheoTrangThaiDonHang
-        {
-            TenTrangThai = tentrangthai,
-            Value = soluong
-        });
-    }
-    return ketqua;
+   return _housesService.getBaiDangCanDuyet();
+}
+public bool DuyetDonHang(Guid id)
+{
+   var find=_housesService.GetById(id);
+   if (find == null)
+       return false;
+   find.TrangThai = 1;
+   if(!_housesService.Update(find)) return false;
+   return true;
+}
+public bool setDonHangDangGiao(Guid id)
+{
+   var find = _housesService.GetById(id);
+   if (find == null)
+       return false;
+   find.TrangThai = 2;
+   if (!_housesService.Update(find)) return false;
+   return true;
 }
 */
-
     }
 }

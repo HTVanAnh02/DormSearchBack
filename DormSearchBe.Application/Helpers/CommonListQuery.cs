@@ -11,6 +11,10 @@ namespace DormSearchBe.Application.Helpers
         public int page { get; set; }
         public int limit { get; set; }
         public string keyword { get; set; }
+        public string? khuvuc { get; set; }
+        public string? thanhpho { get; set; }
+        public string? gia { get; set; }
+        public string? dientich { get; set; }
         public CommonListQuery()
         {
             page = 1;

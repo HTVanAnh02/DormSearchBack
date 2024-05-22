@@ -13,10 +13,13 @@ namespace DormSearchBe.Service.Dashboard
         public long getTotalHouse();
         public long getTotalUser();
         public long getTotalRating();
-        public IEnumerable<HousesDto> getBaiDangCanDuyet();
         public bool DuyetBaiDang(int id);
-        public IEnumerable<DoanhThuTheoTuan> getDoanhThuTheoTuan();
-
-
+        IEnumerable<HousesDto> GetAll();
+        IEnumerable<HousesDto> getBaiDangCanDuyet();
+        HousesDto GetById(Guid id);
+        /*bool Add(HousesDto HousesDto);*/
+        bool Update(HousesDto HousesDto);
+       /* bool Delete(Guid id);*/
+        IEnumerable<HousesDto> getPostbyUserId(int iduser);
     }
 }

@@ -568,3 +568,202 @@ D:\ĐỒ ÁN\VanAnh\VanAnh\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Goog
 D:\ĐỒ ÁN\VanAnh\VanAnh\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Google.Apis.Core.dll
 D:\ĐỒ ÁN\VanAnh\VanAnh\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\System.Management.dll
 D:\ĐỒ ÁN\VanAnh\VanAnh\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Management.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\appsettings.json
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\DormSearchBe.Api.staticwebassets.runtime.json
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\DormSearchBe.Api.exe
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\DormSearchBe.Api.deps.json
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\DormSearchBe.Api.runtimeconfig.json
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\DormSearchBe.Api.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\DormSearchBe.Api.pdb
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\AutoMapper.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Azure.Core.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Azure.Identity.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\CloudinaryDotNet.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Google.Apis.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Google.Apis.Auth.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Google.Apis.Core.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Humanizer.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\MediatR.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\MediatR.Contracts.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Microsoft.OpenApi.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\System.CodeDom.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\System.Drawing.Common.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\System.Management.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\System.Memory.Data.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\System.Runtime.Caching.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\System.Security.Permissions.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\System.Windows.Extensions.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Management.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\DormSearchBe.Application.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\DormSearchBe.Domain.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\DormSearchBe.Infrastructure.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\DormSearchBe.Application.pdb
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\DormSearchBe.Domain.pdb
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\DormSearchBe.Infrastructure.pdb
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\obj\Debug\net7.0\DormSearchBe.Api.csproj.AssemblyReference.cache
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\obj\Debug\net7.0\DormSearchBe.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\obj\Debug\net7.0\DormSearchBe.Api.AssemblyInfoInputs.cache
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\obj\Debug\net7.0\DormSearchBe.Api.AssemblyInfo.cs
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\obj\Debug\net7.0\DormSearchBe.Api.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\obj\Debug\net7.0\DormSearchBe.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\obj\Debug\net7.0\DormSearchBe.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\obj\Debug\net7.0\DormSearchBe.Api.sourcelink.json
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\obj\Debug\net7.0\staticwebassets\msbuild.DormSearchBe.Api.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\obj\Debug\net7.0\staticwebassets\msbuild.build.DormSearchBe.Api.props
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.DormSearchBe.Api.props
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.DormSearchBe.Api.props
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\obj\Debug\net7.0\scopedcss\bundle\DormSearchBe.Api.styles.css
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\obj\Debug\net7.0\DormSearchBe.Api.csproj.CopyComplete
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\obj\Debug\net7.0\DormSearchBe.Api.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\obj\Debug\net7.0\refint\DormSearchBe.Api.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\obj\Debug\net7.0\DormSearchBe.Api.pdb
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\obj\Debug\net7.0\DormSearchBe.Api.genruntimeconfig.cache
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DOANNew\DormSearchBack\DormSearchBe.Api\obj\Debug\net7.0\ref\DormSearchBe.Api.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\appsettings.Development.json
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\appsettings.json
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\DormSearchBe.Api.staticwebassets.runtime.json
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\DormSearchBe.Api.exe
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\DormSearchBe.Api.deps.json
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\DormSearchBe.Api.runtimeconfig.json
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\DormSearchBe.Api.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\DormSearchBe.Api.pdb
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\AutoMapper.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Azure.Core.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Azure.Identity.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\CloudinaryDotNet.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Google.Apis.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Google.Apis.Auth.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Google.Apis.Core.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Humanizer.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\MediatR.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\MediatR.Contracts.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Microsoft.AspNetCore.Authorization.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Microsoft.AspNetCore.Metadata.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Microsoft.OpenApi.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Mono.TextTemplating.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Newtonsoft.Json.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\System.CodeDom.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\System.Drawing.Common.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\System.Management.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\System.Memory.Data.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\System.Runtime.Caching.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\System.Security.Permissions.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\System.Windows.Extensions.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Management.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\DormSearchBe.Application.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\DormSearchBe.Domain.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\DormSearchBe.Infrastructure.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\DormSearchBe.Application.pdb
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\DormSearchBe.Domain.pdb
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\bin\Debug\net7.0\DormSearchBe.Infrastructure.pdb
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\obj\Debug\net7.0\DormSearchBe.Api.csproj.AssemblyReference.cache
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\obj\Debug\net7.0\DormSearchBe.Api.GeneratedMSBuildEditorConfig.editorconfig
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\obj\Debug\net7.0\DormSearchBe.Api.AssemblyInfoInputs.cache
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\obj\Debug\net7.0\DormSearchBe.Api.AssemblyInfo.cs
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\obj\Debug\net7.0\DormSearchBe.Api.csproj.CoreCompileInputs.cache
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\obj\Debug\net7.0\DormSearchBe.Api.MvcApplicationPartsAssemblyInfo.cs
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\obj\Debug\net7.0\DormSearchBe.Api.MvcApplicationPartsAssemblyInfo.cache
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\obj\Debug\net7.0\staticwebassets\msbuild.DormSearchBe.Api.Microsoft.AspNetCore.StaticWebAssets.props
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\obj\Debug\net7.0\staticwebassets\msbuild.build.DormSearchBe.Api.props
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.DormSearchBe.Api.props
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.DormSearchBe.Api.props
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\obj\Debug\net7.0\staticwebassets.pack.json
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\obj\Debug\net7.0\staticwebassets.build.json
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\obj\Debug\net7.0\staticwebassets.development.json
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\obj\Debug\net7.0\scopedcss\bundle\DormSearchBe.Api.styles.css
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\obj\Debug\net7.0\DormSearchBe.Api.csproj.CopyComplete
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\obj\Debug\net7.0\DormSearchBe.Api.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\obj\Debug\net7.0\refint\DormSearchBe.Api.dll
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\obj\Debug\net7.0\DormSearchBe.Api.pdb
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\obj\Debug\net7.0\DormSearchBe.Api.genruntimeconfig.cache
+D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Api\obj\Debug\net7.0\ref\DormSearchBe.Api.dll

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "xVrRQveBjk5Rr2H2RdC9EBMadjVYfzdu49WPzu5vfBg=",
+  "Hash": "wJt++Tr18Lf+VLGKwHiqJcZqV34cNP0HLGkEwhdHgpY=",
   "Source": "DormSearchBe.Api",
   "BasePath": "_content/DormSearchBe.Api",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "DormSearchBe.Api\\wwwroot",
       "Source": "DormSearchBe.Api",
-      "ContentRoot": "D:\\ĐỒ ÁN\\VanAnh\\VanAnh\\DormSearchBack\\DormSearchBe.Api\\wwwroot\\",
+      "ContentRoot": "D:\\ĐỒ ÁN\\DOANNew\\DOANNew\\DormSearchBack\\DormSearchBe.Api\\wwwroot\\",
       "BasePath": "_content/DormSearchBe.Api",
       "Pattern": "**"
     }
