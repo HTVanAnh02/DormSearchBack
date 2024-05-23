@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DormSearchBe.Infrastructure.Migrations
 {
     [DbContext(typeof(DormSearch_DbContext))]
-    [Migration("20240518170344_update")]
-    partial class update
+    [Migration("20240522155735_init")]
+    partial class init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

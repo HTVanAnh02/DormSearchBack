@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ACQGlTRfr7y7lM0f6V6HparLnUfYvYl/l7oMeu2cFmJptCKy2vqHLaVJKygB4V2HA7pHwQFsNZoIvAEofm8Ydg==",
+  "dgSpecHash": "7RICQwB+alFPHNaOaIAxDXMX42r3yx3akfvGH2+XN4KqR1sL3nIu4GcXqeSWZBDPS9MU5997DRfTl9B4LhtxFg==",
   "success": true,
-  "projectFilePath": "D:\\ĐỒ ÁN\\DOANNew\\DOANNew\\DormSearchBack\\DormSearchBe.Application\\DormSearchBe.Application.csproj",
+  "projectFilePath": "C:\\Users\\ADMIN\\OneDrive\\Máy tính\\GitHub\\DormSearchBack\\DormSearchBe.Application\\DormSearchBe.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ADMIN\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",

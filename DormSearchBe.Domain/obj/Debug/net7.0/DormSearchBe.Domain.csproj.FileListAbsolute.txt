@@ -112,3 +112,17 @@ D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Domain\obj\Debug\net7.0
 D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Domain\obj\Debug\net7.0\DormSearchBe.Domain.pdb
 D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Domain\obj\Debug\net7.0\DormSearchBe.Domain.genruntimeconfig.cache
 D:\ĐỒ ÁN\DOANNew\DOANNew\DormSearchBack\DormSearchBe.Domain\obj\Debug\net7.0\ref\DormSearchBe.Domain.dll
+C:\Users\ADMIN\OneDrive\Máy tính\GitHub\DormSearchBack\DormSearchBe.Domain\bin\Debug\net7.0\DormSearchBe.Domain.deps.json
+C:\Users\ADMIN\OneDrive\Máy tính\GitHub\DormSearchBack\DormSearchBe.Domain\bin\Debug\net7.0\DormSearchBe.Domain.runtimeconfig.json
+C:\Users\ADMIN\OneDrive\Máy tính\GitHub\DormSearchBack\DormSearchBe.Domain\bin\Debug\net7.0\DormSearchBe.Domain.dll
+C:\Users\ADMIN\OneDrive\Máy tính\GitHub\DormSearchBack\DormSearchBe.Domain\bin\Debug\net7.0\DormSearchBe.Domain.pdb
+C:\Users\ADMIN\OneDrive\Máy tính\GitHub\DormSearchBack\DormSearchBe.Domain\obj\Debug\net7.0\DormSearchBe.Domain.csproj.AssemblyReference.cache
+C:\Users\ADMIN\OneDrive\Máy tính\GitHub\DormSearchBack\DormSearchBe.Domain\obj\Debug\net7.0\DormSearchBe.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADMIN\OneDrive\Máy tính\GitHub\DormSearchBack\DormSearchBe.Domain\obj\Debug\net7.0\DormSearchBe.Domain.AssemblyInfoInputs.cache
+C:\Users\ADMIN\OneDrive\Máy tính\GitHub\DormSearchBack\DormSearchBe.Domain\obj\Debug\net7.0\DormSearchBe.Domain.AssemblyInfo.cs
+C:\Users\ADMIN\OneDrive\Máy tính\GitHub\DormSearchBack\DormSearchBe.Domain\obj\Debug\net7.0\DormSearchBe.Domain.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\OneDrive\Máy tính\GitHub\DormSearchBack\DormSearchBe.Domain\obj\Debug\net7.0\DormSearchBe.Domain.dll
+C:\Users\ADMIN\OneDrive\Máy tính\GitHub\DormSearchBack\DormSearchBe.Domain\obj\Debug\net7.0\refint\DormSearchBe.Domain.dll
+C:\Users\ADMIN\OneDrive\Máy tính\GitHub\DormSearchBack\DormSearchBe.Domain\obj\Debug\net7.0\DormSearchBe.Domain.pdb
+C:\Users\ADMIN\OneDrive\Máy tính\GitHub\DormSearchBack\DormSearchBe.Domain\obj\Debug\net7.0\DormSearchBe.Domain.genruntimeconfig.cache
+C:\Users\ADMIN\OneDrive\Máy tính\GitHub\DormSearchBack\DormSearchBe.Domain\obj\Debug\net7.0\ref\DormSearchBe.Domain.dll
