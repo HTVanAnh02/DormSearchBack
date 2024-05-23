@@ -1,4 +1,5 @@
 ﻿using CloudinaryDotNet;
+using DormSearchBe.Api.Controllers.Hubs;
 using DormSearchBe.Api.Infrastructure.Extensions;
 using DormSearchBe.Application.Helpers;
 using DormSearchBe.Application.Module;
@@ -11,8 +12,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 
 
-WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
-
+//WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
+var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -68,7 +69,7 @@ IConfiguration configuration = new ConfigurationBuilder()
     .SetBasePath(Directory.GetCurrentDirectory())
     .AddJsonFile("appsettings.json")
     .Build();
-
+builder.Services.AddSignalR();
 var cloudinaryAccount = new Account(
     configuration["Cloudinary:CloudName"],
     configuration["Cloudinary:ApiKey"],
@@ -129,11 +130,12 @@ app.UseAuthentication();
 app.UseCors(builder =>
 {
     builder
-        .AllowAnyOrigin()
-        .AllowAnyMethod()
-        .AllowAnyHeader();
+       .WithOrigins("http://localhost:8080")
+       .AllowAnyMethod()
+       .AllowAnyHeader()
+       .AllowCredentials();
 });
 app.UseAuthorization();
 app.MapControllers();
-
+app.MapHub<ChatHub>("/chatHub");
 app.Run();

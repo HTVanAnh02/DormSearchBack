@@ -49,7 +49,7 @@ namespace DormSearchBe.Api.Controllers.Houses
             return Ok(_houseService.Create(dto));
         }
         [HttpPatch("{id}")]
-        public IActionResult Update(HousesDto dto)
+        public IActionResult Update([FromForm] HousesDto dto)
         {
             var objId = HttpContext.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
             if (objId == null)

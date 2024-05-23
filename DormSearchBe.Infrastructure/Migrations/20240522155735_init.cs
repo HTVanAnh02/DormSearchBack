@@ -6,29 +6,11 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace DormSearchBe.Infrastructure.Migrations
 {
     /// <inheritdoc />
-    public partial class ab : Migration
+    public partial class init : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.CreateTable(
-                name: "Approvals",
-                columns: table => new
-                {
-                    ApprovalId = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    ApprovalName = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    createdBy = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
-                    createdAt = table.Column<DateTime>(type: "datetime2", nullable: true),
-                    updatedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
-                    updatedAt = table.Column<DateTime>(type: "datetime2", nullable: true),
-                    deletedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
-                    deletedAt = table.Column<DateTime>(type: "datetime2", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Approvals", x => x.ApprovalId);
-                });
-
             migrationBuilder.CreateTable(
                 name: "Areass",
                 columns: table => new
@@ -105,6 +87,24 @@ namespace DormSearchBe.Infrastructure.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Permissions",
+                columns: table => new
+                {
+                    PermissionId = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    PermissionName = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    createdBy = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
+                    createdAt = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    updatedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
+                    updatedAt = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    deletedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
+                    deletedAt = table.Column<DateTime>(type: "datetime2", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Permissions", x => x.PermissionId);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Ratings",
                 columns: table => new
                 {
@@ -134,7 +134,6 @@ namespace DormSearchBe.Infrastructure.Migrations
                     RoleId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     RoleName = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     RoleDescription = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    ApprovalId = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     createdBy = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
                     createdAt = table.Column<DateTime>(type: "datetime2", nullable: true),
                     updatedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
@@ -178,12 +177,14 @@ namespace DormSearchBe.Infrastructure.Migrations
                     AddressHouses = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     DateSubmitted = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Photos = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Contact = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    TrangThai = table.Column<int>(type: "int", nullable: false),
                     AreasId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
                     CityId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
                     UserId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
                     RoomstyleId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
-                    RatingsId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
                     FavoritesId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
+                    RatingsId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
                     createdBy = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
                     createdAt = table.Column<DateTime>(type: "datetime2", nullable: true),
                     updatedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
@@ -357,7 +358,7 @@ namespace DormSearchBe.Infrastructure.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Approvals");
+                name: "Permissions");
 
             migrationBuilder.DropTable(
                 name: "RefreshTokens");
