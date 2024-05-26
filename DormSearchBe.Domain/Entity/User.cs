@@ -32,7 +32,6 @@ namespace DormSearchBe.Domain.Entity
         public Houses? Houses { get; set; }
         public virtual ICollection<Notification>? Notifications { get; set; }
         public  ICollection<Refresh_Token>? Refresh_Tokens { get; set; }
-        public ICollection<Notification>? Notifications { get; set; }    
         public User() 
         {
             Role = " Admin";
