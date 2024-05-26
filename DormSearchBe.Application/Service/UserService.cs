@@ -440,6 +440,9 @@ namespace DormSearchBe.Application.Service
             throw new NotImplementedException();
         }
 
-      
+        public bool UpdateProfile(UserDto dto)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -17,5 +17,6 @@ namespace DormSearchBe.Application.IService
         DataResponse<NotificationQuery> Update(NotificationDto dto);
         DataResponse<NotificationQuery> Delete(Guid id);
         DataResponse<NotificationQuery> GetById(Guid id);
+        DataResponse<List<NotificationQuery>> ItemsListByUser(Guid id);
     }
 }
