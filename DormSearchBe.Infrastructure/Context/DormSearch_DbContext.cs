@@ -17,7 +17,7 @@ namespace DormSearchBe.Infrastructure.Context
         public virtual DbSet<Ratings> Ratings { get; set; }
         public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<Refresh_Token> Refresh_Tokens { get; set; }
-
+        public virtual DbSet<Notification> Notifications { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -94,8 +94,14 @@ namespace DormSearchBe.Infrastructure.Context
                 e.HasKey(e => e.UserId);
                 e.HasOne(e => e.User).WithMany(e => e.Refresh_Tokens).HasForeignKey(e => e.UserId).OnDelete(DeleteBehavior.ClientSetNull);
             });
-           
-            
+            modelBuilder.Entity<Notification>(e =>
+            {
+                e.ToTable("Notification");
+                e.HasKey(e => e.NotificationId);
+                e.HasOne(e => e.User).WithMany(e => e.Notifications).HasForeignKey(e => e.UserId).OnDelete(DeleteBehavior.ClientSetNull);
+                e.HasOne(e => e.Houses).WithMany(e => e.Notifications).HasForeignKey(e => e.HouseId).OnDelete(DeleteBehavior.ClientSetNull);
+            });
+
         }
     }
 }
