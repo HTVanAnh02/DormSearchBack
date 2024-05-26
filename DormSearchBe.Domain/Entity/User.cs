@@ -30,6 +30,7 @@ namespace DormSearchBe.Domain.Entity
         public Favorites? Favorites { get; set; }
         public Message? Messages { get; set; }
         public Houses? Houses { get; set; }
+        public virtual ICollection<Notification>? Notifications { get; set; }
         public  ICollection<Refresh_Token>? Refresh_Tokens { get; set; }
         public ICollection<Notification>? Notifications { get; set; }    
         public User() 
