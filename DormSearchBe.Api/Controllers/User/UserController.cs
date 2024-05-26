@@ -5,6 +5,8 @@ using DormSearchBe.Application.Service;
 using DormSearchBe.Domain.Dto.Role;
 using DormSearchBe.Domain.Dto.User;
 using Microsoft.AspNetCore.Mvc;
+using System.Net.Mail;
+using System.Net;
 using System.Security.Cryptography;
 using System.Text;
 
@@ -31,18 +33,45 @@ namespace DormSearchBe.Api.Controllers.User
         {
             return Ok(_userService.Create(dto));
         }
-        [HttpPatch("{id}")]
-        public IActionResult Update([FromForm] UserDto dto)
+        [HttpPost("QuenPassword")]
+        public IActionResult QuenPassword(string username)
         {
-            return Ok(_userService.Update(dto));
+            var accountClient = _userService.GetAll().Where(x => x.Email.Equals(username)).FirstOrDefault();
+            if (accountClient == null)
+            {
+                return BadRequest("tài khoản ko có");
+            }
+            try
+            {
+                var code = new Random().Next(100000, 999999).ToString();
+                MailMessage message = new MailMessage();
+                message.From = new MailAddress("hoangthivananh22122002@gmail.com");
+                message.To.Add(username);
+                message.Subject = "Quên mật khẩu";
+                message.Body = "Mã xác minh là: " + code;
+                SmtpClient client = new SmtpClient();
+                client.UseDefaultCredentials = false;
+                client.Credentials = new NetworkCredential("hoangthivananh22122002@gmail.com", "thzfyhcvpsgnapvl");
+                client.Host = "smtp.gmail.com";
+                client.Port = 587;
+                client.EnableSsl = true;
+                client.DeliveryMethod = SmtpDeliveryMethod.Network;
+                client.Send(message);
+                var codePass = new RouteValueDictionary();
+                codePass.Add("code", code);
+                codePass.Add("email", username);
+                return Ok(new
+                {
+                    Code = code,
+                    Username = username
+                });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
-        /*[HttpPatch("{id}")]
-        public IActionResult Update([FromForm] Guid Id, UserDto dto)
-        {
-            dto.UserId = Id;
-            return Ok(_userService.Update(dto));
-        }*/
-        /*[HttpPost("DoiMatKhau")]
+        [HttpPost("DoiMatKhau")]
         public IActionResult DoiMatKhau(DoiMatKhau model)
         {
             var acoount = _userService.GetAll().Where(x => x.Email.Equals(model.Email)).FirstOrDefault();
@@ -59,7 +88,14 @@ namespace DormSearchBe.Api.Controllers.User
             {
                 return BadRequest();
             }
-        }*/
+        }
+
+        [HttpPatch("{id}")]
+        public IActionResult Update([FromForm] UserDto dto)
+        {
+            return Ok(_userService.Update(dto));
+        }
+        
         private readonly string hash = @"foxle@rn";
         private string maHoaMatKhau(string text)
         {

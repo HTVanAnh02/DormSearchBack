@@ -247,13 +247,26 @@ namespace DormSearchBe.Infrastructure.Migrations
                     b.ToTable("Messages", (string)null);
                 });
 
-            modelBuilder.Entity("DormSearchBe.Domain.Entity.Permission", b =>
+            modelBuilder.Entity("DormSearchBe.Domain.Entity.Notification", b =>
                 {
-                    b.Property<string>("PermissionId")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("NotificationId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("PermissionName")
+                    b.Property<Guid?>("HouseId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<bool>("IsRead")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Message")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("Notification_CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid?>("UserId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime?>("createdAt")
                         .HasColumnType("datetime2");
@@ -273,9 +286,13 @@ namespace DormSearchBe.Infrastructure.Migrations
                     b.Property<Guid?>("updatedBy")
                         .HasColumnType("uniqueidentifier");
 
-                    b.HasKey("PermissionId");
+                    b.HasKey("NotificationId");
 
-                    b.ToTable("Permissions");
+                    b.HasIndex("HouseId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Notification", (string)null);
                 });
 
             modelBuilder.Entity("DormSearchBe.Domain.Entity.Ratings", b =>
@@ -540,6 +557,21 @@ namespace DormSearchBe.Infrastructure.Migrations
                     b.Navigation("Roomstyles");
                 });
 
+            modelBuilder.Entity("DormSearchBe.Domain.Entity.Notification", b =>
+                {
+                    b.HasOne("DormSearchBe.Domain.Entity.Houses", "Houses")
+                        .WithMany("Notifications")
+                        .HasForeignKey("HouseId");
+
+                    b.HasOne("DormSearchBe.Domain.Entity.User", "User")
+                        .WithMany("Notifications")
+                        .HasForeignKey("UserId");
+
+                    b.Navigation("Houses");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("DormSearchBe.Domain.Entity.Refresh_Token", b =>
                 {
                     b.HasOne("DormSearchBe.Domain.Entity.User", "User")
@@ -602,6 +634,8 @@ namespace DormSearchBe.Infrastructure.Migrations
 
             modelBuilder.Entity("DormSearchBe.Domain.Entity.Houses", b =>
                 {
+                    b.Navigation("Notifications");
+
                     b.Navigation("Users");
                 });
 
@@ -629,6 +663,8 @@ namespace DormSearchBe.Infrastructure.Migrations
 
             modelBuilder.Entity("DormSearchBe.Domain.Entity.User", b =>
                 {
+                    b.Navigation("Notifications");
+
                     b.Navigation("Refresh_Tokens");
                 });
 #pragma warning restore 612, 618

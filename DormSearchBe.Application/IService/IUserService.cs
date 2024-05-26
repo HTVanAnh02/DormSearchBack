@@ -27,5 +27,6 @@ namespace DormSearchBe.Application.IService
         IEnumerable<UserDto> GetAll();
         bool Add(UserDto dto);
         bool UpdatePass(UserDto dto);
+        bool UpdateProfile(UserDto dto);
     }
 }

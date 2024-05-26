@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "J3doaIAPe1BBGryZjoLr1UylGIvjjMlZlTJDKtcNASk=",
+  "Hash": "wJt++Tr18Lf+VLGKwHiqJcZqV34cNP0HLGkEwhdHgpY=",
   "Source": "DormSearchBe.Api",
   "BasePath": "_content/DormSearchBe.Api",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "DormSearchBe.Api\\wwwroot",
       "Source": "DormSearchBe.Api",
-      "ContentRoot": "C:\\Users\\ADMIN\\OneDrive\\Máy tính\\GitHub\\DormSearchBack\\DormSearchBe.Api\\wwwroot\\",
+      "ContentRoot": "D:\\ĐỒ ÁN\\DOANNew\\DOANNew\\DormSearchBack\\DormSearchBe.Api\\wwwroot\\",
       "BasePath": "_content/DormSearchBe.Api",
       "Pattern": "**"
     }

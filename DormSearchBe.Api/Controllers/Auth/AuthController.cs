@@ -94,43 +94,7 @@ namespace DormSearchBe.Api.Controllers.Auth
                 }
             }
         }
-       /* [HttpGet("DoiMatKhau2")]
-        public IActionResult DoiMatKhau2(Guid UserId, string PassCu, string PassNew)
-        {
-            var find =_userService.GetById(UserId);
-            if (find == null)
-            {
-                return BadRequest();
-            }
-            if (!find.Password.Equals(maHoaMatKhau(PassCu)))
-            {
-                return BadRequest("Mật khẩu cũ không đúng");
-            }
-            find.Password = maHoaMatKhau(PassNew);
-            if (_accountClientService.Update(find))
-            {
-                return Ok("Đổi mật khẩu thành công");
-            }
-            return BadRequest();
-        }*/
-  /*      [HttpPost("DoiMatKhau")]
-        public IActionResult DoiMatKhau(DoiMatKhau model)
-        {
-            var acoount = _userService.GetAll().Where(x => x.Email.Equals(model.Email)).FirstOrDefault();
-            if (acoount == null)
-            {
-                return BadRequest("tài khoản ko có");
-            }
-            acoount.Password = maHoaMatKhau(model.NewPass);
-            if (_userService.Update(acoount))
-            {
-                return Ok("Thành công. Vui lòng bạn đăng nhập");
-            }
-            else
-            {
-                return BadRequest();
-            }
-        }*/
+    
         [HttpPost("logout")]
         public IActionResult Logout()
         {
