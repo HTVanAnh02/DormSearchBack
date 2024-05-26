@@ -49,7 +49,7 @@ namespace DormSearchBe.Api.Controllers.Houses
             return Ok(_houseService.Create(dto));
         }
         [HttpPatch("{id}")]
-        public IActionResult Update([FromForm] HousesDto dto)
+        public IActionResult Update([FromForm] HousesDto dto,Guid id)
         {
             var objId = HttpContext.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
             if (objId == null)
@@ -57,6 +57,8 @@ namespace DormSearchBe.Api.Controllers.Houses
 
                 throw new ApiException(HttpStatusCode.FORBIDDEN, HttpStatusMessages.Forbidden);
             }
+            dto.HousesId = id;
+            dto.UserId = Guid.Parse(objId);
             var checkId = _usersService.ItemsList().Data.Where(x => x.UserId == Guid.Parse(objId)).FirstOrDefault();
             if (checkId == null)
             {
