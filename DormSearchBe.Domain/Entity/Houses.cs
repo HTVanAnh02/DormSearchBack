@@ -32,6 +32,7 @@ namespace DormSearchBe.Domain.Entity
        /* public Ratings? Ratings { get; set; }
         public Favorites? Favorites { get; set; }*/
         public ICollection<User>? Users { get; set; }
+
         public virtual ICollection<Notification>? Notifications { get; set; }
     }
 }
