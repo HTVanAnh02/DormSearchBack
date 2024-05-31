@@ -9,7 +9,6 @@ namespace DormSearchBe.Domain.Dto.Ratings
     public class RatingsDto
     {
         public Guid RatingsId { get; set; }
-        public Guid? StudentsId { get; set; }
         public Guid? HousesId { get; set; }
         public Guid? LandlordsId { get; set; }
         public string? RatingsDateTime { get; set; }

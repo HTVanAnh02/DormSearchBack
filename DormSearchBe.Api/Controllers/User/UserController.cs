@@ -34,7 +34,7 @@ namespace DormSearchBe.Api.Controllers.User
             return Ok(_userService.Create(dto));
         }
         [HttpPost("QuenPassword")]
-        public IActionResult QuenPassword(string username)
+        public IActionResult QuenPassword(string username,string email)
         {
             var accountClient = _userService.GetAll().Where(x => x.Email.Equals(username)).FirstOrDefault();
             if (accountClient == null)
@@ -45,7 +45,7 @@ namespace DormSearchBe.Api.Controllers.User
             {
                 var code = new Random().Next(100000, 999999).ToString();
                 MailMessage message = new MailMessage();
-                message.From = new MailAddress("hoangthivananh22122002@gmail.com");
+                message.From = new MailAddress(email);
                 message.To.Add(username);
                 message.Subject = "Quên mật khẩu";
                 message.Body = "Mã xác minh là: " + code;

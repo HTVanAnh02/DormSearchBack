@@ -1,7 +1,11 @@
 ﻿using DormSearchBe.Application.Helpers;
 using DormSearchBe.Application.IService;
 using DormSearchBe.Domain.Dto.Favorites;
+using DormSearchBe.Domain.Entity;
+using DormSearchBe.Infrastructure.Exceptions;
+using DormSearchBe.Infrastructure.Settings;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace DormSearchBe.Api.Controllers.Favorites
 {
@@ -9,44 +13,42 @@ namespace DormSearchBe.Api.Controllers.Favorites
     [ApiController]
     public class FavoritesController : ControllerBase
     {
-        private readonly IFavoritesService _favoritesService;
-        public FavoritesController(IFavoritesService favoritesService)
+        private readonly IFavoritesService _favoriteHouseService;
+        public FavoritesController(IFavoritesService favouriteJobService)
         {
-            _favoritesService = favoritesService;
+            _favoriteHouseService = favouriteJobService;
         }
-
-        [HttpGet]
-        public IActionResult GetAll([FromQuery] CommonListQuery query)
+        [HttpGet("Favourite_House")]
+        public IActionResult Favourite_House()
         {
-            return Ok(_favoritesService.Items(query));
+            var objId = HttpContext.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            if (objId == null)
+            {
+                throw new ApiException(HttpStatusCode.FORBIDDEN, HttpStatusMessages.Forbidden);
+            }
+            return Ok(_favoriteHouseService.Favourite_Houses(Guid.Parse(objId)));
         }
-
-        [HttpPost]
-        public IActionResult Create(FavoritesDto dto)
+        [HttpPost("FavoriteHouse")]
+        public IActionResult FavoriteHouse(FavoritesHouse dto)
         {
-            return Ok(_favoritesService.Create(dto));
-        }
-
-        [HttpPatch("{id}")]
-        public IActionResult Update(FavoritesDto dto)
-        {
-            return Ok(_favoritesService.Update(dto));
-        }
-
-        [HttpDelete("{id}")]
-        public IActionResult Delete(Guid id)
-        {
-            return Ok(_favoritesService?.Delete(id));
-        }
-        [HttpGet("{id}")]
-        public IActionResult GetById(Guid id)
-        {
-            return Ok(_favoritesService.GetById(id));
-        }
-        [HttpGet("ItemsList")]
-        public IActionResult ItemsList()
-        {
-            return Ok(_favoritesService.ItemsList());
+            var objId = HttpContext.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            if (objId == null)
+            {
+                throw new ApiException(HttpStatusCode.FORBIDDEN, HttpStatusMessages.Forbidden);
+            }
+            var favorites = new FavoritesDto();
+            if (dto.FavoriteHouseId == "")
+            {
+                favorites.FavoriteHouseId = new Guid();
+            }
+            else
+            {
+                favorites.FavoriteHouseId = Guid.Parse(dto.FavoriteHouseId);
+            }
+            favorites.IsFavorites = Boolean.Parse(dto.IsFavorite_House);
+            favorites.HousesId = Guid.Parse(dto.HouseId);
+            favorites.UserId = Guid.Parse(objId);
+            return Ok(_favoriteHouseService.Favorites(favorites));
         }
     }
 }

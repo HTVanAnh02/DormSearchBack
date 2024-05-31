@@ -198,7 +198,7 @@ namespace DormSearchBe.Application.Service
                     throw new ApiException(400, "Email đã được sử dụng cho một tài khoản khác");
                 }
 
-                var checkRole = _roleRepository.GetById(Guid.Parse("C414A73B-B3F4-4497-125E-08DC73275CEC"));
+                var checkRole = _roleRepository.GetById(Guid.Parse("b090abf2-4426-4ed8-89c9-91fa3b7e7546"));
 
                 var newUser = new User
                 {

@@ -37,7 +37,6 @@ namespace DormSearchBe.Api.Controllers.Ratings
             {
                 throw new ApiException(HttpStatusCode.FORBIDDEN, HttpStatusMessages.Forbidden);
             }
-            dto.StudentsId = Guid.Parse(objId);
             return Ok(_ratingsService.Create(dto));
         }
 

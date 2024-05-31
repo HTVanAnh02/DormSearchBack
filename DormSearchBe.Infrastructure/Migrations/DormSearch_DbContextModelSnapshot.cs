@@ -248,8 +248,7 @@ namespace DormSearchBe.Infrastructure.Migrations
                 });
 
             modelBuilder.Entity("DormSearchBe.Domain.Entity.Notification", b =>
-<<<<<<< HEAD
-=======
+
                 {
                     b.Property<Guid>("NotificationId")
                         .ValueGeneratedOnAdd()
@@ -298,7 +297,6 @@ namespace DormSearchBe.Infrastructure.Migrations
                 });
 
             modelBuilder.Entity("DormSearchBe.Domain.Entity.Permission", b =>
->>>>>>> e694d93d422d477580a56a4526ff55baa3300e17
                 {
                     b.Property<Guid>("NotificationId")
                         .ValueGeneratedOnAdd()
