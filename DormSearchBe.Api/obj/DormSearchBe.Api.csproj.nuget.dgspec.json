@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\ADMIN\\OneDrive\\Máy tính\\GitHub\\DormSearchBack\\DormSearchBe.Api\\DormSearchBe.Api.csproj": {}
   },
   "projects": {
@@ -12,6 +13,19 @@
         "projectPath": "C:\\Users\\ADMIN\\OneDrive\\Máy tính\\GitHub\\DormSearchBack\\DormSearchBe.Api\\DormSearchBe.Api.csproj",
         "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\ADMIN\\OneDrive\\Máy tính\\GitHub\\DormSearchBack\\DormSearchBe.Api\\obj\\",
+=======
+    "D:\\ĐỒ ÁN\\ĐỒ ÁN\\DormSearchBack\\DormSearchBe.Api\\DormSearchBe.Api.csproj": {}
+  },
+  "projects": {
+    "D:\\ĐỒ ÁN\\ĐỒ ÁN\\DormSearchBack\\DormSearchBe.Api\\DormSearchBe.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\ĐỒ ÁN\\ĐỒ ÁN\\DormSearchBack\\DormSearchBe.Api\\DormSearchBe.Api.csproj",
+        "projectName": "DormSearchBe.Api",
+        "projectPath": "D:\\ĐỒ ÁN\\ĐỒ ÁN\\DormSearchBack\\DormSearchBe.Api\\DormSearchBe.Api.csproj",
+        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+        "outputPath": "D:\\ĐỒ ÁN\\ĐỒ ÁN\\DormSearchBack\\DormSearchBe.Api\\obj\\",
+>>>>>>> cd0e9262c216de8458ac450333745c976b95506c
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,6 +42,7 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
+<<<<<<< HEAD
               "C:\\Users\\ADMIN\\OneDrive\\Máy tính\\GitHub\\DormSearchBack\\DormSearchBe.Application\\DormSearchBe.Application.csproj": {
                 "projectPath": "C:\\Users\\ADMIN\\OneDrive\\Máy tính\\GitHub\\DormSearchBack\\DormSearchBe.Application\\DormSearchBe.Application.csproj"
               },
@@ -36,6 +51,16 @@
               },
               "C:\\Users\\ADMIN\\OneDrive\\Máy tính\\GitHub\\DormSearchBack\\DormSearchBe.Infrastructure\\DormSearchBe.Infrastructure.csproj": {
                 "projectPath": "C:\\Users\\ADMIN\\OneDrive\\Máy tính\\GitHub\\DormSearchBack\\DormSearchBe.Infrastructure\\DormSearchBe.Infrastructure.csproj"
+=======
+              "D:\\ĐỒ ÁN\\ĐỒ ÁN\\DormSearchBack\\DormSearchBe.Application\\DormSearchBe.Application.csproj": {
+                "projectPath": "D:\\ĐỒ ÁN\\ĐỒ ÁN\\DormSearchBack\\DormSearchBe.Application\\DormSearchBe.Application.csproj"
+              },
+              "D:\\ĐỒ ÁN\\ĐỒ ÁN\\DormSearchBack\\DormSearchBe.Domain\\DormSearchBe.Domain.csproj": {
+                "projectPath": "D:\\ĐỒ ÁN\\ĐỒ ÁN\\DormSearchBack\\DormSearchBe.Domain\\DormSearchBe.Domain.csproj"
+              },
+              "D:\\ĐỒ ÁN\\ĐỒ ÁN\\DormSearchBack\\DormSearchBe.Infrastructure\\DormSearchBe.Infrastructure.csproj": {
+                "projectPath": "D:\\ĐỒ ÁN\\ĐỒ ÁN\\DormSearchBack\\DormSearchBe.Infrastructure\\DormSearchBe.Infrastructure.csproj"
+>>>>>>> cd0e9262c216de8458ac450333745c976b95506c
               }
             }
           }
@@ -120,6 +145,7 @@
         }
       }
     },
+<<<<<<< HEAD
     "C:\\Users\\ADMIN\\OneDrive\\Máy tính\\GitHub\\DormSearchBack\\DormSearchBe.Application\\DormSearchBe.Application.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -128,6 +154,16 @@
         "projectPath": "C:\\Users\\ADMIN\\OneDrive\\Máy tính\\GitHub\\DormSearchBack\\DormSearchBe.Application\\DormSearchBe.Application.csproj",
         "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\ADMIN\\OneDrive\\Máy tính\\GitHub\\DormSearchBack\\DormSearchBe.Application\\obj\\",
+=======
+    "D:\\ĐỒ ÁN\\ĐỒ ÁN\\DormSearchBack\\DormSearchBe.Application\\DormSearchBe.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\ĐỒ ÁN\\ĐỒ ÁN\\DormSearchBack\\DormSearchBe.Application\\DormSearchBe.Application.csproj",
+        "projectName": "DormSearchBe.Application",
+        "projectPath": "D:\\ĐỒ ÁN\\ĐỒ ÁN\\DormSearchBack\\DormSearchBe.Application\\DormSearchBe.Application.csproj",
+        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+        "outputPath": "D:\\ĐỒ ÁN\\ĐỒ ÁN\\DormSearchBack\\DormSearchBe.Application\\obj\\",
+>>>>>>> cd0e9262c216de8458ac450333745c976b95506c
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -144,11 +180,19 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
+<<<<<<< HEAD
               "C:\\Users\\ADMIN\\OneDrive\\Máy tính\\GitHub\\DormSearchBack\\DormSearchBe.Domain\\DormSearchBe.Domain.csproj": {
                 "projectPath": "C:\\Users\\ADMIN\\OneDrive\\Máy tính\\GitHub\\DormSearchBack\\DormSearchBe.Domain\\DormSearchBe.Domain.csproj"
               },
               "C:\\Users\\ADMIN\\OneDrive\\Máy tính\\GitHub\\DormSearchBack\\DormSearchBe.Infrastructure\\DormSearchBe.Infrastructure.csproj": {
                 "projectPath": "C:\\Users\\ADMIN\\OneDrive\\Máy tính\\GitHub\\DormSearchBack\\DormSearchBe.Infrastructure\\DormSearchBe.Infrastructure.csproj"
+=======
+              "D:\\ĐỒ ÁN\\ĐỒ ÁN\\DormSearchBack\\DormSearchBe.Domain\\DormSearchBe.Domain.csproj": {
+                "projectPath": "D:\\ĐỒ ÁN\\ĐỒ ÁN\\DormSearchBack\\DormSearchBe.Domain\\DormSearchBe.Domain.csproj"
+              },
+              "D:\\ĐỒ ÁN\\ĐỒ ÁN\\DormSearchBack\\DormSearchBe.Infrastructure\\DormSearchBe.Infrastructure.csproj": {
+                "projectPath": "D:\\ĐỒ ÁN\\ĐỒ ÁN\\DormSearchBack\\DormSearchBe.Infrastructure\\DormSearchBe.Infrastructure.csproj"
+>>>>>>> cd0e9262c216de8458ac450333745c976b95506c
               }
             }
           }
@@ -222,6 +266,7 @@
         }
       }
     },
+<<<<<<< HEAD
     "C:\\Users\\ADMIN\\OneDrive\\Máy tính\\GitHub\\DormSearchBack\\DormSearchBe.Domain\\DormSearchBe.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -230,6 +275,16 @@
         "projectPath": "C:\\Users\\ADMIN\\OneDrive\\Máy tính\\GitHub\\DormSearchBack\\DormSearchBe.Domain\\DormSearchBe.Domain.csproj",
         "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\ADMIN\\OneDrive\\Máy tính\\GitHub\\DormSearchBack\\DormSearchBe.Domain\\obj\\",
+=======
+    "D:\\ĐỒ ÁN\\ĐỒ ÁN\\DormSearchBack\\DormSearchBe.Domain\\DormSearchBe.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\ĐỒ ÁN\\ĐỒ ÁN\\DormSearchBack\\DormSearchBe.Domain\\DormSearchBe.Domain.csproj",
+        "projectName": "DormSearchBe.Domain",
+        "projectPath": "D:\\ĐỒ ÁN\\ĐỒ ÁN\\DormSearchBack\\DormSearchBe.Domain\\DormSearchBe.Domain.csproj",
+        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+        "outputPath": "D:\\ĐỒ ÁN\\ĐỒ ÁN\\DormSearchBack\\DormSearchBe.Domain\\obj\\",
+>>>>>>> cd0e9262c216de8458ac450333745c976b95506c
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -301,6 +356,7 @@
         }
       }
     },
+<<<<<<< HEAD
     "C:\\Users\\ADMIN\\OneDrive\\Máy tính\\GitHub\\DormSearchBack\\DormSearchBe.Infrastructure\\DormSearchBe.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -309,6 +365,16 @@
         "projectPath": "C:\\Users\\ADMIN\\OneDrive\\Máy tính\\GitHub\\DormSearchBack\\DormSearchBe.Infrastructure\\DormSearchBe.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\ADMIN\\OneDrive\\Máy tính\\GitHub\\DormSearchBack\\DormSearchBe.Infrastructure\\obj\\",
+=======
+    "D:\\ĐỒ ÁN\\ĐỒ ÁN\\DormSearchBack\\DormSearchBe.Infrastructure\\DormSearchBe.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\ĐỒ ÁN\\ĐỒ ÁN\\DormSearchBack\\DormSearchBe.Infrastructure\\DormSearchBe.Infrastructure.csproj",
+        "projectName": "DormSearchBe.Infrastructure",
+        "projectPath": "D:\\ĐỒ ÁN\\ĐỒ ÁN\\DormSearchBack\\DormSearchBe.Infrastructure\\DormSearchBe.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+        "outputPath": "D:\\ĐỒ ÁN\\ĐỒ ÁN\\DormSearchBack\\DormSearchBe.Infrastructure\\obj\\",
+>>>>>>> cd0e9262c216de8458ac450333745c976b95506c
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -325,8 +391,13 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
+<<<<<<< HEAD
               "C:\\Users\\ADMIN\\OneDrive\\Máy tính\\GitHub\\DormSearchBack\\DormSearchBe.Domain\\DormSearchBe.Domain.csproj": {
                 "projectPath": "C:\\Users\\ADMIN\\OneDrive\\Máy tính\\GitHub\\DormSearchBack\\DormSearchBe.Domain\\DormSearchBe.Domain.csproj"
+=======
+              "D:\\ĐỒ ÁN\\ĐỒ ÁN\\DormSearchBack\\DormSearchBe.Domain\\DormSearchBe.Domain.csproj": {
+                "projectPath": "D:\\ĐỒ ÁN\\ĐỒ ÁN\\DormSearchBack\\DormSearchBe.Domain\\DormSearchBe.Domain.csproj"
+>>>>>>> cd0e9262c216de8458ac450333745c976b95506c
               }
             }
           }
