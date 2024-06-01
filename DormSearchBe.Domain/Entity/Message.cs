@@ -12,6 +12,7 @@ namespace DormSearchBe.Domain.Entity
         public Guid? MessagesId { get; set; }   
         public string? Messages { get; set; }
         public Guid UserId { get; set; }
+        public Guid? UserSend {  get; set; }
         public ICollection<User>? Users { get; set; }
 
     }

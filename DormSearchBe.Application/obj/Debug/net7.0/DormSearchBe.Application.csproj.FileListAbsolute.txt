@@ -171,3 +171,22 @@ C:\Users\ADMIN\OneDrive\Máy tính\GitHub\DormSearchBack\DormSearchBe.Applicatio
 C:\Users\ADMIN\OneDrive\Máy tính\GitHub\DormSearchBack\DormSearchBe.Application\obj\Debug\net7.0\DormSearchBe.Application.pdb
 C:\Users\ADMIN\OneDrive\Máy tính\GitHub\DormSearchBack\DormSearchBe.Application\obj\Debug\net7.0\DormSearchBe.Application.genruntimeconfig.cache
 C:\Users\ADMIN\OneDrive\Máy tính\GitHub\DormSearchBack\DormSearchBe.Application\obj\Debug\net7.0\ref\DormSearchBe.Application.dll
+D:\ĐỒ ÁN\ĐỒ ÁN\DormSearchBack\DormSearchBe.Application\bin\Debug\net7.0\DormSearchBe.Application.deps.json
+D:\ĐỒ ÁN\ĐỒ ÁN\DormSearchBack\DormSearchBe.Application\bin\Debug\net7.0\DormSearchBe.Application.runtimeconfig.json
+D:\ĐỒ ÁN\ĐỒ ÁN\DormSearchBack\DormSearchBe.Application\bin\Debug\net7.0\DormSearchBe.Application.dll
+D:\ĐỒ ÁN\ĐỒ ÁN\DormSearchBack\DormSearchBe.Application\bin\Debug\net7.0\DormSearchBe.Application.pdb
+D:\ĐỒ ÁN\ĐỒ ÁN\DormSearchBack\DormSearchBe.Application\bin\Debug\net7.0\DormSearchBe.Domain.dll
+D:\ĐỒ ÁN\ĐỒ ÁN\DormSearchBack\DormSearchBe.Application\bin\Debug\net7.0\DormSearchBe.Infrastructure.dll
+D:\ĐỒ ÁN\ĐỒ ÁN\DormSearchBack\DormSearchBe.Application\bin\Debug\net7.0\DormSearchBe.Domain.pdb
+D:\ĐỒ ÁN\ĐỒ ÁN\DormSearchBack\DormSearchBe.Application\bin\Debug\net7.0\DormSearchBe.Infrastructure.pdb
+D:\ĐỒ ÁN\ĐỒ ÁN\DormSearchBack\DormSearchBe.Application\obj\Debug\net7.0\DormSearchBe.Application.csproj.AssemblyReference.cache
+D:\ĐỒ ÁN\ĐỒ ÁN\DormSearchBack\DormSearchBe.Application\obj\Debug\net7.0\DormSearchBe.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\ĐỒ ÁN\ĐỒ ÁN\DormSearchBack\DormSearchBe.Application\obj\Debug\net7.0\DormSearchBe.Application.AssemblyInfoInputs.cache
+D:\ĐỒ ÁN\ĐỒ ÁN\DormSearchBack\DormSearchBe.Application\obj\Debug\net7.0\DormSearchBe.Application.AssemblyInfo.cs
+D:\ĐỒ ÁN\ĐỒ ÁN\DormSearchBack\DormSearchBe.Application\obj\Debug\net7.0\DormSearchBe.Application.csproj.CoreCompileInputs.cache
+D:\ĐỒ ÁN\ĐỒ ÁN\DormSearchBack\DormSearchBe.Application\obj\Debug\net7.0\DormSearchBe.Application.csproj.CopyComplete
+D:\ĐỒ ÁN\ĐỒ ÁN\DormSearchBack\DormSearchBe.Application\obj\Debug\net7.0\DormSearchBe.Application.dll
+D:\ĐỒ ÁN\ĐỒ ÁN\DormSearchBack\DormSearchBe.Application\obj\Debug\net7.0\refint\DormSearchBe.Application.dll
+D:\ĐỒ ÁN\ĐỒ ÁN\DormSearchBack\DormSearchBe.Application\obj\Debug\net7.0\DormSearchBe.Application.pdb
+D:\ĐỒ ÁN\ĐỒ ÁN\DormSearchBack\DormSearchBe.Application\obj\Debug\net7.0\DormSearchBe.Application.genruntimeconfig.cache
+D:\ĐỒ ÁN\ĐỒ ÁN\DormSearchBack\DormSearchBe.Application\obj\Debug\net7.0\ref\DormSearchBe.Application.dll

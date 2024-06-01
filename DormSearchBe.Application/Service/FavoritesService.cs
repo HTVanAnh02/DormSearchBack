@@ -5,7 +5,6 @@ using DormSearchBe.Application.Wrappers.Concrete;
 using DormSearchBe.Domain.Dto.Favorites;
 using DormSearchBe.Domain.Entity;
 using DormSearchBe.Domain.Repositories;
-using DormSearchBe.Infrastructure.Exceptions;
 using DormSearchBe.Infrastructure.Settings;
 using System;
 using System.Collections.Generic;
@@ -15,84 +14,63 @@ using System.Threading.Tasks;
 
 namespace DormSearchBe.Application.Service
 {
-    public class FavoritesService : IFavoritesService
+    public class FavoritesHouseService : IFavoritesService
     {
-        private readonly IFavoritesRepository _favoritesRepository;
+        private readonly IFavoritesRepository _favorites_HouseRepository;
         private readonly IMapper _mapper;
-        public FavoritesService(IFavoritesRepository favoritesRepository, IMapper mapper)
+        private readonly IHousesRepository _houseRepository;
+        public FavoritesHouseService(IFavoritesRepository favorites_HouseRepository, IMapper mapper, IHousesRepository houseRepository)
         {
-            _favoritesRepository = favoritesRepository;
+            _favorites_HouseRepository = favorites_HouseRepository;
             _mapper = mapper;
+            _houseRepository = houseRepository;
         }
 
-        public DataResponse<FavoritesDto> Create(FavoritesDto dto)
+        public DataResponse<FavoritesDto> Favorites(FavoritesDto dto)
         {
-            dto.FavoritesId = Guid.NewGuid();
-            var newData = _favoritesRepository.Create(_mapper.Map<Favorites>(dto));
-            if (newData != null)
-            {
-                return new DataResponse<FavoritesDto>(_mapper.Map<FavoritesDto>(newData), HttpStatusCode.OK, HttpStatusMessages.AddedSuccesfully);
-            }
-            throw new ApiException(HttpStatusCode.BAD_REQUEST, HttpStatusMessages.AddedError);
+            throw new NotImplementedException();
         }
 
-        public DataResponse<FavoritesDto> Delete(Guid id)
+        public DataResponse<FavoritesDto> Favourite(FavoritesDto dto)
         {
-            var item = _favoritesRepository.GetById(id);
-            if (item == null)
+            var obj = new Favorites();
+            var isFavourite = _favorites_HouseRepository.GetAllData().Where(x => x.FavoritesId == dto.FavoriteHouseId && x.HousesId == dto.HousesId).FirstOrDefault();
+            if (isFavourite == null)
             {
-                throw new ApiException(HttpStatusCode.ITEM_NOT_FOUND, HttpStatusMessages.NotFound);
+                obj = _favorites_HouseRepository.Create(_mapper.Map<Favorites>(dto));
             }
-            var data = _favoritesRepository.Delete(id);
-            if (data != null)
+            else
             {
-                return new DataResponse<FavoritesDto>(_mapper.Map<FavoritesDto>(item), HttpStatusCode.OK, HttpStatusMessages.DeletedSuccessfully);
+                obj = _favorites_HouseRepository.Update(_mapper.Map<Favorites>(dto));
             }
-            throw new ApiException(HttpStatusCode.BAD_REQUEST, HttpStatusMessages.DeletedError);
+            return new DataResponse<FavoritesDto>(_mapper.Map<FavoritesDto>(obj), HttpStatusCode.OK, HttpStatusMessages.UpdatedSuccessfully);
+
         }
 
-        public DataResponse<FavoritesDto> GetById(Guid id)
+        public DataResponse<List<FavoritesDto>> Favourite_Houses(Guid objId)
         {
-            var item = _favoritesRepository.GetById(id);
-            if (item == null)
-            {
-                throw new ApiException(HttpStatusCode.ITEM_NOT_FOUND, HttpStatusMessages.NotFound);
-            }
-            return new DataResponse<FavoritesDto>(_mapper.Map<FavoritesDto>(item), HttpStatusCode.OK, HttpStatusMessages.OK);
+            throw new NotImplementedException();
         }
 
-        public PagedDataResponse<FavoritesDto> Items(CommonListQuery commonList)
+        public PagedDataResponse<FavoritesDto> Favourite_Houses2(CommonListQuery commonListQuery, Guid objId)
         {
-            var query = _mapper.Map<List<FavoritesDto>>(_favoritesRepository.GetAllData());
-            var paginatedResult = PaginatedList<FavoritesDto>.ToPageList(query, commonList.page, commonList.limit);
+            throw new NotImplementedException();
+        }
+
+        public DataResponse<List<FavoritesDto>> Favourite_Jobs(Guid objId)
+        {
+            var query = _favorites_HouseRepository.GetAllData().Where(x => x.HousesId == objId);
+            return new DataResponse<List<FavoritesDto>>(_mapper.Map<List<FavoritesDto>>(query), HttpStatusCode.OK, HttpStatusMessages.OK);
+
+        }
+
+        public PagedDataResponse<FavoritesDto> Favourite_Jobs2(CommonListQuery commonListQuery, Guid objId)
+        {
+            var query = _mapper.Map<List<FavoritesDto>>(_favorites_HouseRepository.GetAllData().Where(x => x.HousesId == objId));
+            var total = _houseRepository.GetAllData().Count();
+            commonListQuery.limit = total;
+            var paginatedResult = PaginatedList<FavoritesDto>.ToPageList(query, commonListQuery.page, commonListQuery.limit);
             return new PagedDataResponse<FavoritesDto>(paginatedResult, 200, query.Count());
-        }
-
-        public DataResponse<List<FavoritesDto>> ItemsList()
-        {
-            var query = _favoritesRepository.GetAllData();
-            if (query != null && query.Any())
-            {
-                var FavoritesDtos = _mapper.Map<List<FavoritesDto>>(query);
-                return new DataResponse<List<FavoritesDto>>(_mapper.Map<List<FavoritesDto>>(query), HttpStatusCode.OK, HttpStatusMessages.OK);
-            }
-            throw new ApiException(HttpStatusCode.ITEM_NOT_FOUND, HttpStatusMessages.NotFound);
-        }
-
-
-        public DataResponse<FavoritesDto> Update(FavoritesDto dto)
-        {
-            var item = _favoritesRepository.GetById(dto.FavoritesId);
-            if (item == null)
-            {
-                throw new ApiException(HttpStatusCode.ITEM_NOT_FOUND, HttpStatusMessages.NotFound);
-            }
-            var newData = _favoritesRepository.Update(_mapper.Map(dto, item));
-            if (newData != null)
-            {
-                return new DataResponse<FavoritesDto>(_mapper.Map<FavoritesDto>(newData), HttpStatusCode.OK, HttpStatusMessages.UpdatedSuccessfully);
-            }
-            throw new ApiException(HttpStatusCode.BAD_REQUEST, HttpStatusMessages.UpdatedError);
         }
 
     }

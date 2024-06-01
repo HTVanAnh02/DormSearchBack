@@ -6713,11 +6713,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ĐỒ ÁN\\DOANNew\\DOANNew\\DormSearchBack\\DormSearchBe.Application\\DormSearchBe.Application.csproj",
+      "projectUniqueName": "C:\\Users\\ADMIN\\OneDrive\\Máy tính\\GitHub\\DormSearchBack\\DormSearchBe.Application\\DormSearchBe.Application.csproj",
       "projectName": "DormSearchBe.Application",
-      "projectPath": "D:\\ĐỒ ÁN\\DOANNew\\DOANNew\\DormSearchBack\\DormSearchBe.Application\\DormSearchBe.Application.csproj",
+      "projectPath": "C:\\Users\\ADMIN\\OneDrive\\Máy tính\\GitHub\\DormSearchBack\\DormSearchBe.Application\\DormSearchBe.Application.csproj",
       "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-      "outputPath": "D:\\ĐỒ ÁN\\DOANNew\\DOANNew\\DormSearchBack\\DormSearchBe.Application\\obj\\",
+      "outputPath": "C:\\Users\\ADMIN\\OneDrive\\Máy tính\\GitHub\\DormSearchBack\\DormSearchBe.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6734,11 +6734,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\ĐỒ ÁN\\DOANNew\\DOANNew\\DormSearchBack\\DormSearchBe.Domain\\DormSearchBe.Domain.csproj": {
-              "projectPath": "D:\\ĐỒ ÁN\\DOANNew\\DOANNew\\DormSearchBack\\DormSearchBe.Domain\\DormSearchBe.Domain.csproj"
+            "C:\\Users\\ADMIN\\OneDrive\\Máy tính\\GitHub\\DormSearchBack\\DormSearchBe.Domain\\DormSearchBe.Domain.csproj": {
+              "projectPath": "C:\\Users\\ADMIN\\OneDrive\\Máy tính\\GitHub\\DormSearchBack\\DormSearchBe.Domain\\DormSearchBe.Domain.csproj"
             },
-            "D:\\ĐỒ ÁN\\DOANNew\\DOANNew\\DormSearchBack\\DormSearchBe.Infrastructure\\DormSearchBe.Infrastructure.csproj": {
-              "projectPath": "D:\\ĐỒ ÁN\\DOANNew\\DOANNew\\DormSearchBack\\DormSearchBe.Infrastructure\\DormSearchBe.Infrastructure.csproj"
+            "C:\\Users\\ADMIN\\OneDrive\\Máy tính\\GitHub\\DormSearchBack\\DormSearchBe.Infrastructure\\DormSearchBe.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\ADMIN\\OneDrive\\Máy tính\\GitHub\\DormSearchBack\\DormSearchBe.Infrastructure\\DormSearchBe.Infrastructure.csproj"
             }
           }
         }

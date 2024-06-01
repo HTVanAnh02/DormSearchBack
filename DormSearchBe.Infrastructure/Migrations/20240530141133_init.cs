@@ -87,24 +87,6 @@ namespace DormSearchBe.Infrastructure.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Permissions",
-                columns: table => new
-                {
-                    PermissionId = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    PermissionName = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    createdBy = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
-                    createdAt = table.Column<DateTime>(type: "datetime2", nullable: true),
-                    updatedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
-                    updatedAt = table.Column<DateTime>(type: "datetime2", nullable: true),
-                    deletedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
-                    deletedAt = table.Column<DateTime>(type: "datetime2", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Permissions", x => x.PermissionId);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Ratings",
                 columns: table => new
                 {
@@ -279,6 +261,55 @@ namespace DormSearchBe.Infrastructure.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Chat_Groups",
+                columns: table => new
+                {
+                    Chat_Group_Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    UserId = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Chat_Groups", x => x.Chat_Group_Id);
+                    table.ForeignKey(
+                        name: "FK_Chat_Groups_Users_UserId",
+                        column: x => x.UserId,
+                        principalTable: "Users",
+                        principalColumn: "UserId");
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Notification",
+                columns: table => new
+                {
+                    NotificationId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    HouseId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
+                    UserId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
+                    Message = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    IsRead = table.Column<bool>(type: "bit", nullable: false),
+                    Notification_CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    createdBy = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
+                    createdAt = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    updatedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
+                    updatedAt = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    deletedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
+                    deletedAt = table.Column<DateTime>(type: "datetime2", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Notification", x => x.NotificationId);
+                    table.ForeignKey(
+                        name: "FK_Notification_Houses_HouseId",
+                        column: x => x.HouseId,
+                        principalTable: "Houses",
+                        principalColumn: "HousesId");
+                    table.ForeignKey(
+                        name: "FK_Notification_Users_UserId",
+                        column: x => x.UserId,
+                        principalTable: "Users",
+                        principalColumn: "UserId");
+                });
+
+            migrationBuilder.CreateTable(
                 name: "RefreshTokens",
                 columns: table => new
                 {
@@ -304,6 +335,11 @@ namespace DormSearchBe.Infrastructure.Migrations
                 });
 
             migrationBuilder.CreateIndex(
+                name: "IX_Chat_Groups_UserId",
+                table: "Chat_Groups",
+                column: "UserId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Houses_AreasId",
                 table: "Houses",
                 column: "AreasId");
@@ -327,6 +363,16 @@ namespace DormSearchBe.Infrastructure.Migrations
                 name: "IX_Houses_RoomstyleId",
                 table: "Houses",
                 column: "RoomstyleId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Notification_HouseId",
+                table: "Notification",
+                column: "HouseId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Notification_UserId",
+                table: "Notification",
+                column: "UserId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Users_FavoritesId",
@@ -358,7 +404,10 @@ namespace DormSearchBe.Infrastructure.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Permissions");
+                name: "Chat_Groups");
+
+            migrationBuilder.DropTable(
+                name: "Notification");
 
             migrationBuilder.DropTable(
                 name: "RefreshTokens");

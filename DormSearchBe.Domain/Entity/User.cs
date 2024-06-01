@@ -31,6 +31,7 @@ namespace DormSearchBe.Domain.Entity
         public Message? Messages { get; set; }
         public Houses? Houses { get; set; }
         public virtual ICollection<Notification>? Notifications { get; set; }
+        public virtual ICollection<Chat_Group>? Chat_Groups { get; set; }
         public  ICollection<Refresh_Token>? Refresh_Tokens { get; set; }
         public User() 
         {

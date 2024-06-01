@@ -5,10 +5,9 @@ namespace DormSearchBe.Api.Controllers.Hubs
 {
     public class ChatHub : Hub
     {
-        public async Task SendMessage(string user, string message)
+        public async Task SendMessage()
         {
-            var objId = Context.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-            await Clients.All.SendAsync("ReceiveMessage", user, message);
+            await Clients.All.SendAsync("ReceiveMessage");
         }
     }
 }

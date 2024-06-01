@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using DormSearchBe.Domain.Dto.Areas;
 using DormSearchBe.Domain.Dto.Auth;
+using DormSearchBe.Domain.Dto.Chat;
 using DormSearchBe.Domain.Dto.City;
 using DormSearchBe.Domain.Dto.Favorites;
 using DormSearchBe.Domain.Dto.Houses;
@@ -50,7 +51,10 @@ namespace DormSearchBe.Domain.Mapping
             CreateMap<User, UserDto>().ReverseMap();
             CreateMap<Notification, NotificationDto>().ReverseMap();
             CreateMap<Notification, NotificationQuery>().ReverseMap();
-            
+
+            CreateMap<Chat_Group, Chat_GroupDto>().ReverseMap();
+            CreateMap<Chat_Group, ChatQuery>().ReverseMap();
+
         }
     }
 }

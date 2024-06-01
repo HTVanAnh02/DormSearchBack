@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DormSearchBe.Infrastructure.Migrations
 {
     [DbContext(typeof(DormSearch_DbContext))]
-    [Migration("20240526083745_update")]
-    partial class update
+    [Migration("20240530142011_da")]
+    partial class da
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -56,6 +56,43 @@ namespace DormSearchBe.Infrastructure.Migrations
                     b.HasKey("AreasId");
 
                     b.ToTable("Areass", (string)null);
+                });
+
+            modelBuilder.Entity("DormSearchBe.Domain.Entity.Chat_Group", b =>
+                {
+                    b.Property<Guid>("Chat_Group_Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("UserSend_Id")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime?>("createdAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid?>("createdBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime?>("deletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid?>("deletedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime?>("updatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid?>("updatedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Chat_Group_Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Chat_Groups", (string)null);
                 });
 
             modelBuilder.Entity("DormSearchBe.Domain.Entity.City", b =>
@@ -531,6 +568,16 @@ namespace DormSearchBe.Infrastructure.Migrations
                     b.ToTable("Users", (string)null);
                 });
 
+            modelBuilder.Entity("DormSearchBe.Domain.Entity.Chat_Group", b =>
+                {
+                    b.HasOne("DormSearchBe.Domain.Entity.User", "User")
+                        .WithMany("Chat_Groups")
+                        .HasForeignKey("UserId")
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("DormSearchBe.Domain.Entity.Houses", b =>
                 {
                     b.HasOne("DormSearchBe.Domain.Entity.Areas", "Areas")
@@ -666,6 +713,8 @@ namespace DormSearchBe.Infrastructure.Migrations
 
             modelBuilder.Entity("DormSearchBe.Domain.Entity.User", b =>
                 {
+                    b.Navigation("Chat_Groups");
+
                     b.Navigation("Notifications");
 
                     b.Navigation("Refresh_Tokens");

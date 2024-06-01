@@ -24,7 +24,7 @@ namespace DormSearchBe.Infrastructure.Module
             services.AddScoped<IRoleRepository, RoleRepository>();
             services.AddScoped<IRoomstyleRepository,RoomstyleRepository>();
             services.AddScoped<INotificationRepository, NotificationRepository>();
-
+            services.AddScoped<IChatGroupRepository, ChatGroupRepository>();
             services.AddScoped<IUserRepository, UserRepository>();
             return services;
         }

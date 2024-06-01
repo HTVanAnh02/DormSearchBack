@@ -17,6 +17,7 @@ namespace DormSearchBe.Infrastructure.Context
         public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<Refresh_Token> Refresh_Tokens { get; set; }
         public virtual DbSet<Notification> Notifications { get; set; }
+        public virtual DbSet<Chat_Group> Chat_Groups  { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -99,7 +100,12 @@ namespace DormSearchBe.Infrastructure.Context
                 e.HasOne(e => e.Houses).WithMany(e => e.Notifications).HasForeignKey(e => e.HouseId).OnDelete(DeleteBehavior.ClientSetNull);
             });
 
-
+            modelBuilder.Entity<Chat_Group>(e =>
+            {
+                e.ToTable("Chat_Groups");
+                e.HasKey(e => e.Chat_Group_Id);
+                e.HasOne(e => e.User).WithMany(e => e.Chat_Groups).HasForeignKey(e => e.UserId).OnDelete(DeleteBehavior.ClientSetNull);
+            });
         }
     }
 }

@@ -55,6 +55,43 @@ namespace DormSearchBe.Infrastructure.Migrations
                     b.ToTable("Areass", (string)null);
                 });
 
+            modelBuilder.Entity("DormSearchBe.Domain.Entity.Chat_Group", b =>
+                {
+                    b.Property<Guid>("Chat_Group_Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("UserSend_Id")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime?>("createdAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid?>("createdBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime?>("deletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid?>("deletedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime?>("updatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid?>("updatedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Chat_Group_Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Chat_Groups", (string)null);
+                });
+
             modelBuilder.Entity("DormSearchBe.Domain.Entity.City", b =>
                 {
                     b.Property<Guid>("CityId")
@@ -224,6 +261,9 @@ namespace DormSearchBe.Infrastructure.Migrations
                     b.Property<Guid>("UserId")
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<Guid?>("UserSend")
+                        .HasColumnType("uniqueidentifier");
+
                     b.Property<DateTime?>("createdAt")
                         .HasColumnType("datetime2");
 
@@ -248,57 +288,6 @@ namespace DormSearchBe.Infrastructure.Migrations
                 });
 
             modelBuilder.Entity("DormSearchBe.Domain.Entity.Notification", b =>
-<<<<<<< HEAD
-=======
-                {
-                    b.Property<Guid>("NotificationId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid?>("HouseId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<bool>("IsRead")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("Message")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("Notification_CreatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<Guid?>("UserId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime?>("createdAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<Guid?>("createdBy")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime?>("deletedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<Guid?>("deletedBy")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime?>("updatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<Guid?>("updatedBy")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.HasKey("NotificationId");
-
-                    b.HasIndex("HouseId");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("Notification", (string)null);
-                });
-
-            modelBuilder.Entity("DormSearchBe.Domain.Entity.Permission", b =>
->>>>>>> e694d93d422d477580a56a4526ff55baa3300e17
                 {
                     b.Property<Guid>("NotificationId")
                         .ValueGeneratedOnAdd()
@@ -579,6 +568,16 @@ namespace DormSearchBe.Infrastructure.Migrations
                     b.ToTable("Users", (string)null);
                 });
 
+            modelBuilder.Entity("DormSearchBe.Domain.Entity.Chat_Group", b =>
+                {
+                    b.HasOne("DormSearchBe.Domain.Entity.User", "User")
+                        .WithMany("Chat_Groups")
+                        .HasForeignKey("UserId")
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("DormSearchBe.Domain.Entity.Houses", b =>
                 {
                     b.HasOne("DormSearchBe.Domain.Entity.Areas", "Areas")
@@ -714,6 +713,8 @@ namespace DormSearchBe.Infrastructure.Migrations
 
             modelBuilder.Entity("DormSearchBe.Domain.Entity.User", b =>
                 {
+                    b.Navigation("Chat_Groups");
+
                     b.Navigation("Notifications");
 
                     b.Navigation("Refresh_Tokens");
