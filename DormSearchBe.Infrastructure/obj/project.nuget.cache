@@ -1,14 +1,8 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "atcH0M3hTKSAY1NuVUUxK09Ab4aR+Wiid9qYQTfsycFQC4468+NwwBw3Wd5MR550fGi7lxUlaAByE5Ec8cd+tA==",
+  "dgSpecHash": "O9MnsOKMIetak7yXUjvEjDVnDEubWpmNtGVx1FXFFMXtOrd6QjMUwbtiZ+u/15qoMQAdGH0c+mE4tEmcnLFxyQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ADMIN\\OneDrive\\Máy tính\\GitHub\\DormSearchBack\\DormSearchBe.Infrastructure\\DormSearchBe.Infrastructure.csproj",
-=======
-  "dgSpecHash": "pOAExo7kYT8hHld6sTqSfv8uz+onf7x9cjtJA8heWupDQuwsamjFONweWpX+5JYO0mQCaSqC9H1Vujdz3TwPFg==",
-  "success": true,
-  "projectFilePath": "D:\\ĐỒ ÁN\\ĐỒ ÁN\\DormSearchBack\\DormSearchBe.Infrastructure\\DormSearchBe.Infrastructure.csproj",
->>>>>>> cd0e9262c216de8458ac450333745c976b95506c
+  "projectFilePath": "D:\\ĐỒ ÁN\\DormNew\\DormNew\\DormSearchBack\\DormSearchBe.Infrastructure\\DormSearchBe.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ADMIN\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",

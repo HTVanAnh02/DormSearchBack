@@ -8,6 +8,7 @@ namespace DormSearchBe.Domain.Dto.User
 {
     public class TokenDto
     {
+        public string? Id { get; set; }
         public string? AccessToken { get; set; }
         public int AccessTokenExpiration { get; set; }
         public string? RefreshToken { get; set; }

@@ -54,21 +54,6 @@ D:\TAIWAN\DormSearchBe\DormSearchBe.Domain\obj\Debug\net7.0\refint\DormSearchBe.
 D:\TAIWAN\DormSearchBe\DormSearchBe.Domain\obj\Debug\net7.0\DormSearchBe.Domain.pdb
 D:\TAIWAN\DormSearchBe\DormSearchBe.Domain\obj\Debug\net7.0\DormSearchBe.Domain.genruntimeconfig.cache
 D:\TAIWAN\DormSearchBe\DormSearchBe.Domain\obj\Debug\net7.0\ref\DormSearchBe.Domain.dll
-C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DormSearchBack\DormSearchBe.Domain\bin\Debug\net7.0\DormSearchBe.Domain.deps.json
-C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DormSearchBack\DormSearchBe.Domain\bin\Debug\net7.0\DormSearchBe.Domain.runtimeconfig.json
-C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DormSearchBack\DormSearchBe.Domain\bin\Debug\net7.0\DormSearchBe.Domain.dll
-C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DormSearchBack\DormSearchBe.Domain\bin\Debug\net7.0\DormSearchBe.Domain.pdb
-C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DormSearchBack\DormSearchBe.Domain\obj\Debug\net7.0\DormSearchBe.Domain.csproj.AssemblyReference.cache
-C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DormSearchBack\DormSearchBe.Domain\obj\Debug\net7.0\DormSearchBe.Domain.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DormSearchBack\DormSearchBe.Domain\obj\Debug\net7.0\DormSearchBe.Domain.AssemblyInfoInputs.cache
-C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DormSearchBack\DormSearchBe.Domain\obj\Debug\net7.0\DormSearchBe.Domain.AssemblyInfo.cs
-C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DormSearchBack\DormSearchBe.Domain\obj\Debug\net7.0\DormSearchBe.Domain.csproj.CoreCompileInputs.cache
-C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DormSearchBack\DormSearchBe.Domain\obj\Debug\net7.0\DormSearchBe.Domain.sourcelink.json
-C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DormSearchBack\DormSearchBe.Domain\obj\Debug\net7.0\DormSearchBe.Domain.dll
-C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DormSearchBack\DormSearchBe.Domain\obj\Debug\net7.0\refint\DormSearchBe.Domain.dll
-C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DormSearchBack\DormSearchBe.Domain\obj\Debug\net7.0\DormSearchBe.Domain.pdb
-C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DormSearchBack\DormSearchBe.Domain\obj\Debug\net7.0\DormSearchBe.Domain.genruntimeconfig.cache
-C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DormSearchBack\DormSearchBe.Domain\obj\Debug\net7.0\ref\DormSearchBe.Domain.dll
 D:\ĐỒ ÁN\VanAnh\VanAnh\DormSearchBack\DormSearchBe.Domain\bin\Debug\net7.0\DormSearchBe.Domain.deps.json
 D:\ĐỒ ÁN\VanAnh\VanAnh\DormSearchBack\DormSearchBe.Domain\bin\Debug\net7.0\DormSearchBe.Domain.runtimeconfig.json
 D:\ĐỒ ÁN\VanAnh\VanAnh\DormSearchBack\DormSearchBe.Domain\bin\Debug\net7.0\DormSearchBe.Domain.dll
@@ -140,3 +125,32 @@ D:\ĐỒ ÁN\ĐỒ ÁN\DormSearchBack\DormSearchBe.Domain\obj\Debug\net7.0\refin
 D:\ĐỒ ÁN\ĐỒ ÁN\DormSearchBack\DormSearchBe.Domain\obj\Debug\net7.0\DormSearchBe.Domain.pdb
 D:\ĐỒ ÁN\ĐỒ ÁN\DormSearchBack\DormSearchBe.Domain\obj\Debug\net7.0\DormSearchBe.Domain.genruntimeconfig.cache
 D:\ĐỒ ÁN\ĐỒ ÁN\DormSearchBack\DormSearchBe.Domain\obj\Debug\net7.0\ref\DormSearchBe.Domain.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DormSearchBack\DormSearchBe.Domain\bin\Debug\net7.0\DormSearchBe.Domain.deps.json
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DormSearchBack\DormSearchBe.Domain\bin\Debug\net7.0\DormSearchBe.Domain.runtimeconfig.json
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DormSearchBack\DormSearchBe.Domain\bin\Debug\net7.0\DormSearchBe.Domain.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DormSearchBack\DormSearchBe.Domain\bin\Debug\net7.0\DormSearchBe.Domain.pdb
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DormSearchBack\DormSearchBe.Domain\obj\Debug\net7.0\DormSearchBe.Domain.csproj.AssemblyReference.cache
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DormSearchBack\DormSearchBe.Domain\obj\Debug\net7.0\DormSearchBe.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DormSearchBack\DormSearchBe.Domain\obj\Debug\net7.0\DormSearchBe.Domain.AssemblyInfoInputs.cache
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DormSearchBack\DormSearchBe.Domain\obj\Debug\net7.0\DormSearchBe.Domain.AssemblyInfo.cs
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DormSearchBack\DormSearchBe.Domain\obj\Debug\net7.0\DormSearchBe.Domain.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DormSearchBack\DormSearchBe.Domain\obj\Debug\net7.0\DormSearchBe.Domain.sourcelink.json
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DormSearchBack\DormSearchBe.Domain\obj\Debug\net7.0\DormSearchBe.Domain.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DormSearchBack\DormSearchBe.Domain\obj\Debug\net7.0\refint\DormSearchBe.Domain.dll
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DormSearchBack\DormSearchBe.Domain\obj\Debug\net7.0\DormSearchBe.Domain.pdb
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DormSearchBack\DormSearchBe.Domain\obj\Debug\net7.0\DormSearchBe.Domain.genruntimeconfig.cache
+C:\Users\ASUS\OneDrive\Desktop\GiaoDienVueJs\DoAnCuaKhach\VanAnh\DormSearchBack\DormSearchBe.Domain\obj\Debug\net7.0\ref\DormSearchBe.Domain.dll
+D:\ĐỒ ÁN\DormNew\DormNew\DormSearchBack\DormSearchBe.Domain\bin\Debug\net7.0\DormSearchBe.Domain.deps.json
+D:\ĐỒ ÁN\DormNew\DormNew\DormSearchBack\DormSearchBe.Domain\bin\Debug\net7.0\DormSearchBe.Domain.runtimeconfig.json
+D:\ĐỒ ÁN\DormNew\DormNew\DormSearchBack\DormSearchBe.Domain\bin\Debug\net7.0\DormSearchBe.Domain.dll
+D:\ĐỒ ÁN\DormNew\DormNew\DormSearchBack\DormSearchBe.Domain\bin\Debug\net7.0\DormSearchBe.Domain.pdb
+D:\ĐỒ ÁN\DormNew\DormNew\DormSearchBack\DormSearchBe.Domain\obj\Debug\net7.0\DormSearchBe.Domain.csproj.AssemblyReference.cache
+D:\ĐỒ ÁN\DormNew\DormNew\DormSearchBack\DormSearchBe.Domain\obj\Debug\net7.0\DormSearchBe.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\ĐỒ ÁN\DormNew\DormNew\DormSearchBack\DormSearchBe.Domain\obj\Debug\net7.0\DormSearchBe.Domain.AssemblyInfoInputs.cache
+D:\ĐỒ ÁN\DormNew\DormNew\DormSearchBack\DormSearchBe.Domain\obj\Debug\net7.0\DormSearchBe.Domain.AssemblyInfo.cs
+D:\ĐỒ ÁN\DormNew\DormNew\DormSearchBack\DormSearchBe.Domain\obj\Debug\net7.0\DormSearchBe.Domain.csproj.CoreCompileInputs.cache
+D:\ĐỒ ÁN\DormNew\DormNew\DormSearchBack\DormSearchBe.Domain\obj\Debug\net7.0\DormSearchBe.Domain.dll
+D:\ĐỒ ÁN\DormNew\DormNew\DormSearchBack\DormSearchBe.Domain\obj\Debug\net7.0\refint\DormSearchBe.Domain.dll
+D:\ĐỒ ÁN\DormNew\DormNew\DormSearchBack\DormSearchBe.Domain\obj\Debug\net7.0\DormSearchBe.Domain.pdb
+D:\ĐỒ ÁN\DormNew\DormNew\DormSearchBack\DormSearchBe.Domain\obj\Debug\net7.0\DormSearchBe.Domain.genruntimeconfig.cache
+D:\ĐỒ ÁN\DormNew\DormNew\DormSearchBack\DormSearchBe.Domain\obj\Debug\net7.0\ref\DormSearchBe.Domain.dll

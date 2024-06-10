@@ -28,27 +28,27 @@ namespace DormSearchBe.Api.Controllers.Favorites
             }
             return Ok(_favoriteHouseService.Favourite_Houses(Guid.Parse(objId)));
         }
-        [HttpPost("FavoriteHouse")]
-        public IActionResult FavoriteHouse(FavoritesHouse dto)
-        {
-            var objId = HttpContext.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-            if (objId == null)
-            {
-                throw new ApiException(HttpStatusCode.FORBIDDEN, HttpStatusMessages.Forbidden);
-            }
-            var favorites = new FavoritesDto();
-            if (dto.FavoriteHouseId == "")
-            {
-                favorites.FavoriteHouseId = new Guid();
-            }
-            else
-            {
-                favorites.FavoriteHouseId = Guid.Parse(dto.FavoriteHouseId);
-            }
-            favorites.IsFavorites = Boolean.Parse(dto.IsFavorite_House);
-            favorites.HousesId = Guid.Parse(dto.HouseId);
-            favorites.UserId = Guid.Parse(objId);
-            return Ok(_favoriteHouseService.Favorites(favorites));
-        }
+        //[HttpPost("FavoriteHouse")]
+        //public IActionResult FavoriteHouse(FavoritesHouse dto)
+        //{
+        //    var objId = HttpContext.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+        //    if (objId == null)
+        //    {
+        //        throw new ApiException(HttpStatusCode.FORBIDDEN, HttpStatusMessages.Forbidden);
+        //    }
+        //    var favorites = new FavoritesDto();
+        //    if (dto.FavoriteHouseId == "")
+        //    {
+        //        favorites.FavoriteHouseId = new Guid();
+        //    }
+        //    else
+        //    {
+        //        favorites.FavoriteHouseId = Guid.Parse(dto.FavoriteHouseId);
+        //    }
+        //    favorites.IsFavorites = Boolean.Parse(dto.IsFavorite_House);
+        //    favorites.HousesId = Guid.Parse(dto.HouseId);
+        //    favorites.UserId = Guid.Parse(objId);
+        //    return Ok(_favoriteHouseService.Favorites(favorites));
+        //}
     }
 }

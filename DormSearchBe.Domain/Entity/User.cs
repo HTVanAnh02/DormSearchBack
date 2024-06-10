@@ -33,6 +33,9 @@ namespace DormSearchBe.Domain.Entity
         public virtual ICollection<Notification>? Notifications { get; set; }
         public virtual ICollection<Chat_Group>? Chat_Groups { get; set; }
         public  ICollection<Refresh_Token>? Refresh_Tokens { get; set; }
+        public  ICollection<Comment>? Comments { get; set; }
+        public  ICollection<CommentDescription>? CommentDescriptions { get; set; }
+        public  ICollection<GuiOTP>? GuiOTPs { get; set; }
         public User() 
         {
             Role = " Admin";

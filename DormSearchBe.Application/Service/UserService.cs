@@ -270,6 +270,7 @@ namespace DormSearchBe.Application.Service
 
             var tokenDto = new TokenDto
             {
+                Id = user.UserId.ToString(),
                 AccessToken = token,
                 RefreshToken = CreateRefreshToken(),
                 AccessTokenExpiration = (int)((DateTimeOffset)accessTokenExpiration).ToUnixTimeSeconds(),

@@ -3,6 +3,7 @@ using DormSearchBe.Api.Controllers.Hubs;
 using DormSearchBe.Api.Infrastructure.Extensions;
 using DormSearchBe.Application.Helpers;
 using DormSearchBe.Application.Module;
+using DormSearchBe.Domain.EmailConfig;
 using DormSearchBe.Domain.Entity;
 using DormSearchBe.Infrastructure.Context;
 using DormSearchBe.Infrastructure.Exceptions;
@@ -59,7 +60,7 @@ builder.Services.Configure<ApiBehaviorOptions>(options =>
     options.SuppressModelStateInvalidFilter = true;
 });
 builder.Services.AddAuthorization();
-
+builder.Services.Configure<EmailSetting>(builder.Configuration.GetSection("EmailSettings"));
 //ConnectStrings
 builder.Services.AddDbContext<DormSearch_DbContext>(option =>
 option.UseSqlServer(builder.Configuration.GetConnectionString("DormSearch_Context")));

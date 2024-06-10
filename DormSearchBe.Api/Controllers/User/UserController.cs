@@ -9,6 +9,7 @@ using System.Net.Mail;
 using System.Net;
 using System.Security.Cryptography;
 using System.Text;
+using DormSearchBe.Domain.Dto.Otp;
 
 namespace DormSearchBe.Api.Controllers.User
 {
@@ -17,9 +18,11 @@ namespace DormSearchBe.Api.Controllers.User
     public class UserController : ControllerBase
     {
         private readonly IUserService _userService;
-        public UserController(IUserService userService)
+        private readonly IGuiOTPService _guiOtpService;
+        public UserController(IUserService userService, IGuiOTPService guiOtpService)
         {
             _userService = userService;
+            _guiOtpService = guiOtpService;
         }
 
         [HttpGet]
@@ -88,6 +91,27 @@ namespace DormSearchBe.Api.Controllers.User
             {
                 return BadRequest();
             }
+        }
+
+        [HttpDelete]
+        [Route(nameof(DeleteAllOTPs))]
+        public IActionResult DeleteAllOTPs(string email)
+        {
+            return Ok(_guiOtpService.DeleteToken(email));
+        }
+
+        [HttpPut]
+        [Route(nameof(UpdatePassword))]
+        public IActionResult UpdatePassword(updatePassword updatePasswords)
+        {
+            return Ok(_guiOtpService.UpdatePassword(updatePasswords));
+        }
+
+        [HttpPost]
+        [Route(nameof(GuiOTP))]
+        public IActionResult GuiOTP(string email)
+        {
+            return Ok(_guiOtpService.guiOTP(email));
         }
 
         [HttpPatch("{id}")]

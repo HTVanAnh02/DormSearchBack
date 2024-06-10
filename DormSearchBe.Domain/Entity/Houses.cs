@@ -34,5 +34,6 @@ namespace DormSearchBe.Domain.Entity
         public ICollection<User>? Users { get; set; }
 
         public virtual ICollection<Notification>? Notifications { get; set; }
+        public virtual ICollection<Comment>? Comments { get; set; }
     }
 }

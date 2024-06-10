@@ -124,6 +124,101 @@ namespace DormSearchBe.Infrastructure.Migrations
                     b.ToTable("Citys", (string)null);
                 });
 
+            modelBuilder.Entity("DormSearchBe.Domain.Entity.Comment", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("HousesId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Message")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid?>("accountId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime?>("createdAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid?>("createdBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime?>("deletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid?>("deletedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime?>("updatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid?>("updatedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("HousesId");
+
+                    b.HasIndex("accountId");
+
+                    b.ToTable("Comments");
+                });
+
+            modelBuilder.Entity("DormSearchBe.Domain.Entity.CommentDescription", b =>
+                {
+                    b.Property<Guid?>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("Id_Commnet")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Message")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid?>("RepComment2")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("RepComment3_N")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("UserId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("commentsId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime?>("createdAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid?>("createdBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime?>("deletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid?>("deletedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime?>("updatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid?>("updatedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("RepComment2");
+
+                    b.HasIndex("UserId");
+
+                    b.HasIndex("commentsId");
+
+                    b.ToTable("CommentDescription", (string)null);
+                });
+
             modelBuilder.Entity("DormSearchBe.Domain.Entity.Favorites", b =>
                 {
                     b.Property<Guid>("FavoritesId")
@@ -160,6 +255,46 @@ namespace DormSearchBe.Infrastructure.Migrations
                     b.HasKey("FavoritesId");
 
                     b.ToTable("Favorites", (string)null);
+                });
+
+            modelBuilder.Entity("DormSearchBe.Domain.Entity.GuiOTP", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("Email_id")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime?>("createdAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid?>("createdBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime?>("deletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid?>("deletedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("otp")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("updatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid?>("updatedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("usersUserId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("usersUserId");
+
+                    b.ToTable("GuiOtps");
                 });
 
             modelBuilder.Entity("DormSearchBe.Domain.Entity.Houses", b =>
@@ -288,58 +423,6 @@ namespace DormSearchBe.Infrastructure.Migrations
                 });
 
             modelBuilder.Entity("DormSearchBe.Domain.Entity.Notification", b =>
-<<<<<<< HEAD
-=======
-
-                {
-                    b.Property<Guid>("NotificationId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid?>("HouseId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<bool>("IsRead")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("Message")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("Notification_CreatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<Guid?>("UserId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime?>("createdAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<Guid?>("createdBy")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime?>("deletedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<Guid?>("deletedBy")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime?>("updatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<Guid?>("updatedBy")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.HasKey("NotificationId");
-
-                    b.HasIndex("HouseId");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("Notification", (string)null);
-                });
-
-            modelBuilder.Entity("DormSearchBe.Domain.Entity.Permission", b =>
->>>>>>> cd0e9262c216de8458ac450333745c976b95506c
                 {
                     b.Property<Guid>("NotificationId")
                         .ValueGeneratedOnAdd()
@@ -630,6 +713,51 @@ namespace DormSearchBe.Infrastructure.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("DormSearchBe.Domain.Entity.Comment", b =>
+                {
+                    b.HasOne("DormSearchBe.Domain.Entity.Houses", "Houses")
+                        .WithMany("Comments")
+                        .HasForeignKey("HousesId");
+
+                    b.HasOne("DormSearchBe.Domain.Entity.User", "Account")
+                        .WithMany("Comments")
+                        .HasForeignKey("accountId");
+
+                    b.Navigation("Account");
+
+                    b.Navigation("Houses");
+                });
+
+            modelBuilder.Entity("DormSearchBe.Domain.Entity.CommentDescription", b =>
+                {
+                    b.HasOne("DormSearchBe.Domain.Entity.CommentDescription", "RepComment2s")
+                        .WithMany("commentDescriptions")
+                        .HasForeignKey("RepComment2");
+
+                    b.HasOne("DormSearchBe.Domain.Entity.User", "Account")
+                        .WithMany("CommentDescriptions")
+                        .HasForeignKey("UserId");
+
+                    b.HasOne("DormSearchBe.Domain.Entity.Comment", "comments")
+                        .WithMany("commentDescriptions")
+                        .HasForeignKey("commentsId");
+
+                    b.Navigation("Account");
+
+                    b.Navigation("RepComment2s");
+
+                    b.Navigation("comments");
+                });
+
+            modelBuilder.Entity("DormSearchBe.Domain.Entity.GuiOTP", b =>
+                {
+                    b.HasOne("DormSearchBe.Domain.Entity.User", "users")
+                        .WithMany("GuiOTPs")
+                        .HasForeignKey("usersUserId");
+
+                    b.Navigation("users");
+                });
+
             modelBuilder.Entity("DormSearchBe.Domain.Entity.Houses", b =>
                 {
                     b.HasOne("DormSearchBe.Domain.Entity.Areas", "Areas")
@@ -727,6 +855,16 @@ namespace DormSearchBe.Infrastructure.Migrations
                     b.Navigation("Houses");
                 });
 
+            modelBuilder.Entity("DormSearchBe.Domain.Entity.Comment", b =>
+                {
+                    b.Navigation("commentDescriptions");
+                });
+
+            modelBuilder.Entity("DormSearchBe.Domain.Entity.CommentDescription", b =>
+                {
+                    b.Navigation("commentDescriptions");
+                });
+
             modelBuilder.Entity("DormSearchBe.Domain.Entity.Favorites", b =>
                 {
                     b.Navigation("Houses");
@@ -736,6 +874,8 @@ namespace DormSearchBe.Infrastructure.Migrations
 
             modelBuilder.Entity("DormSearchBe.Domain.Entity.Houses", b =>
                 {
+                    b.Navigation("Comments");
+
                     b.Navigation("Notifications");
 
                     b.Navigation("Users");
@@ -766,6 +906,12 @@ namespace DormSearchBe.Infrastructure.Migrations
             modelBuilder.Entity("DormSearchBe.Domain.Entity.User", b =>
                 {
                     b.Navigation("Chat_Groups");
+
+                    b.Navigation("CommentDescriptions");
+
+                    b.Navigation("Comments");
+
+                    b.Navigation("GuiOTPs");
 
                     b.Navigation("Notifications");
 

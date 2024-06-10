@@ -115,6 +115,7 @@ namespace DormSearchBe.Application.Service
 
         public PagedDataResponse<HousesQuery> Items(CommonListQuery commonListQuery)
         {
+            // http://localhost:8080/homedetail/4054D82E-3EEE-4DDF-9B92-0D4F31F640BB
             var query = _mapper.Map<List<HousesDto>>(_housesRepository.GetAllData());
             var areas = _mapper.Map<List<AreasQuery>>(_areasRepository.GetAllData());
             var cities = _mapper.Map<List<CityQuery>>(_cityRepository.GetAllData());

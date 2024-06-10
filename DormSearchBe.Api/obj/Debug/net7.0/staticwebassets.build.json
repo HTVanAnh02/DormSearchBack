@@ -1,27 +1,19 @@
 {
   "Version": 1,
-<<<<<<< HEAD
-  "Hash": "J3doaIAPe1BBGryZjoLr1UylGIvjjMlZlTJDKtcNASk=",
-=======
-  "Hash": "LESewiQGVmKCVwGuZ23tf7bCD8wmoIne3sBGKtI0QtI=",
->>>>>>> cd0e9262c216de8458ac450333745c976b95506c
+  "Hash": "rfALzyIdRF8DhLfefEBc8oi9pv5OimpwmBaj3o/wI7A=",
   "Source": "DormSearchBe.Api",
   "BasePath": "_content/DormSearchBe.Api",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-<<<<<<< HEAD
   "DiscoveryPatterns": [
     {
       "Name": "DormSearchBe.Api\\wwwroot",
       "Source": "DormSearchBe.Api",
-      "ContentRoot": "C:\\Users\\ADMIN\\OneDrive\\Máy tính\\GitHub\\DormSearchBack\\DormSearchBe.Api\\wwwroot\\",
+      "ContentRoot": "D:\\ĐỒ ÁN\\DormNew\\DormNew\\DormSearchBack\\DormSearchBe.Api\\wwwroot\\",
       "BasePath": "_content/DormSearchBe.Api",
       "Pattern": "**"
     }
   ],
-=======
-  "DiscoveryPatterns": [],
->>>>>>> cd0e9262c216de8458ac450333745c976b95506c
   "Assets": []
 }

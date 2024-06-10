@@ -18,6 +18,9 @@ namespace DormSearchBe.Infrastructure.Context
         public virtual DbSet<Refresh_Token> Refresh_Tokens { get; set; }
         public virtual DbSet<Notification> Notifications { get; set; }
         public virtual DbSet<Chat_Group> Chat_Groups  { get; set; }
+        public virtual DbSet<CommentDescription> CommentDescriptions { get; set; }
+        public virtual DbSet<Comment> Comments  { get; set; }
+        public virtual DbSet<GuiOTP> GuiOtps  { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -105,6 +108,16 @@ namespace DormSearchBe.Infrastructure.Context
                 e.ToTable("Chat_Groups");
                 e.HasKey(e => e.Chat_Group_Id);
                 e.HasOne(e => e.User).WithMany(e => e.Chat_Groups).HasForeignKey(e => e.UserId).OnDelete(DeleteBehavior.ClientSetNull);
+            });
+
+            modelBuilder.Entity<CommentDescription>(e =>
+            {
+                e.ToTable("CommentDescription");
+                e.HasKey(e => e.Id);
+                e.HasOne(e => e.RepComment2s) // Một CommentDescription có thể có một thực thể cha(Nghĩa là đối tượng được bảng này liên kết đến)
+                .WithMany(e => e.commentDescriptions) // Một CommentDescription có thể có nhiều thực thể con(Nghĩa là 1 list danh sách của thuộc tính liên kết đến: ICollection, IList...)
+                .HasForeignKey(e => e.RepComment2) // // Định nghĩa khóa ngoại tự tham chiếu(Biến khóa ngoại đại diện cho đối tượng của bảng này liên kết đến liên kết đến)
+                .OnDelete(DeleteBehavior.ClientSetNull);
             });
         }
     }
